@@ -1,0 +1,631 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  3 2024 10:22:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2f804h (194564) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0003f82c vaddr=3fc9b000 size=007ech (  2028) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=a4078h (671864) map[0m
+[0;32mI (261) esp_image: segment 3: paddr=000e40a0 vaddr=3fc9b7ec size=0465ch ( 18012) load[0m
+[0;32mI (265) esp_image: segment 4: paddr=000e8704 vaddr=40374000 size=16f10h ( 93968) load[0m
+[0;32mI (297) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (297) boot: Disabling RNG early entropy source...[0m
+[0;32mI (308) cpu_start: Multicore app[0m
+V (308) mmap: after coalescing, 1 regions are left[0m
+[0;32mI (309) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (311) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (317) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (322) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (327) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (332) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (338) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (343) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (349) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (355) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (361) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (371) esp_psram: Speed: 40MHz[0m
+V (375) mmap: found laddr is 0xe0000[0m
+V (378) esp_psram: 8bit-aligned-region: actual_mapped_len is 0x800000 bytes[0m
+V (385) esp_psram: 8bit-aligned-range: 0x800000 B, starting from: 0x3c0e0000[0m
+D (392) cpu_start: Pro cpu up[0m
+D (395) cpu_start: Starting app cpu, entry point is 0x4037556c[0m
+D (0) cpu_start: App cpu up[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 1 access error intr clr & ena mask is: 0x1f
+[0;32mI (1132) esp_psram: SPI SRAM memory test OK[0m
+D (1141) clk: RTC_SLOW_CLK calibration value: 3813286[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+[0;32mI (1147) cpu_start: Pro cpu start user code[0m
+[0;32mI (1150) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1155) cpu_start: Application information:[0m
+[0;32mI (1160) cpu_start: Project name:     netstick-test[0m
+[0;32mI (1165) cpu_start: App version:      02fd1a5-dirty[0m
+[0;32mI (1171) cpu_start: Compile time:     Oct  7 2024 11:11:02[0m
+[0;32mI (1177) cpu_start: ELF file SHA256:  f19bc93a1...[0m
+[0;32mI (1182) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (1188) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (1193) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (1198) cpu_start: Chip rev:         v0.2[0m
+V (1202) memory_layout: reserved range is 0x3c0df7dc - 0x3c0df80c[0m
+D (1208) memory_layout: Checking 7 reserved memory ranges:[0m
+D (1214) memory_layout: Reserved memory range 0x3c000000 - 0x3e000000[0m
+D (1221) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9b000[0m
+D (1227) memory_layout: Reserved memory range 0x3fc9b000 - 0x3fca3f90[0m
+D (1234) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000[0m
+D (1240) memory_layout: Reserved memory range 0x40374000 - 0x4038b000[0m
+D (1247) memory_layout: Reserved memory range 0x600fe000 - 0x600fe010[0m
+D (1253) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000[0m
+D (1260) memory_layout: Building list of available memory regions:[0m
+V (1266) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000[0m
+V (1273) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1281) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000[0m
+V (1288) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1298) memory_layout: Region 0x3fc9b000 - 0x3fca0000 inside of reserved 0x3fc9b000 - 0x3fca3f90[0m
+V (1307) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000[0m
+V (1313) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9b000 - 0x3fca3f90[0m
+D (1323) memory_layout: Available memory region 0x3fca3f90 - 0x3fcb0000[0m
+V (1330) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000[0m
+D (1336) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000[0m
+V (1343) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (1350) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000[0m
+V (1356) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000[0m
+D (1363) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000[0m
+V (1370) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710[0m
+D (1377) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710[0m
+V (1383) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000[0m
+V (1390) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000[0m
+D (1399) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34[0m
+V (1406) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000[0m
+D (1413) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000[0m
+V (1419) memory_layout: Examining memory region 0x3c000000 - 0x3e000000[0m
+V (1426) memory_layout: Region 0x3c000000 - 0x3e000000 inside of reserved 0x3c000000 - 0x3e000000[0m
+V (1435) memory_layout: Examining memory region 0x600fe000 - 0x60100000[0m
+V (1442) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe010[0m
+V (1451) memory_layout: End of region 0x600fe010 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000[0m
+D (1461) memory_layout: Available memory region 0x600fe010 - 0x600fffe8[0m
+[0;32mI (1467) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (1475) heap_init: New heap initialised at 0x3fca3f90[0m
+[0;32mI (1480) heap_init: At 3FCA3F90 len 00045780 (277 KiB): RAM[0m
+[0;32mI (1486) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (1492) heap_init: New heap initialised at 0x3fcf0000[0m
+[0;32mI (1498) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (1504) heap_init: New heap initialised at 0x600fe010[0m
+[0;32mI (1509) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (1516) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+V (1523) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1529) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1538) intr_alloc: Connected src 39 to int 2 (cpu 0)[0m
+V (1543) memspi: raw_chip_id: 1740C8
+[0m
+V (1547) memspi: chip_id: C84017
+[0m
+V (1550) memspi: raw_chip_id: 1740C8
+[0m
+V (1554) memspi: chip_id: C84017
+[0m
+D (1557) spi_flash: trying chip: issi[0m
+D (1561) spi_flash: trying chip: gd[0m
+[0;32mI (1565) spi_flash: detected chip: gd[0m
+[0;32mI (1569) spi_flash: flash io: dio[0m
+[0;33mW (1573) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (1586) cpu_start: calling init function: 0x42085014[0m
+D (1592) cpu_start: calling init function: 0x42084530[0m
+D (1597) cpu_start: calling init function: 0x42019bc4[0m
+D (1602) cpu_start: calling init function: 0x42011d4c[0m
+D (1607) cpu_start: calling init function: 0x42010edc[0m
+[0;33mW (1612) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (1623) cpu_start: calling init function: 0x4037c71c[0m
+D (1628) cpu_start: calling init function: 0x420020f8[0m
+D (1633) cpu_start: calling init function: 0x420078e8 on core: 0[0m
+V (1639) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1645) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02[0m
+D (1654) intr_alloc: Connected src 59 to int 3 (cpu 0)[0m
+D (1659) cpu_start: calling init function: 0x42005130 on core: 0[0m
+[0;32mI (1665) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1672) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (1679) cpu_start: calling init function: 0x4200328c on core: 0[0m
+V (1685) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1691) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1700) intr_alloc: Connected src 79 to int 9 (cpu 0)[0m
+D (1705) app_start: Starting scheduler on CPU0[0m
+V (1709) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1709) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (1709) intr_alloc: Connected src 57 to int 12 (cpu 0)[0m
+V (1709) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1719) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E[0m
+D (1719) intr_alloc: Connected src 80 to int 2 (cpu 1)[0m
+D (1729) app_start: Starting scheduler on CPU1[0m
+V (1729) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1739) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402[0m
+D (1749) intr_alloc: Connected src 58 to int 3 (cpu 1)[0m
+[0;32mI (1709) main_task: Started on CPU0[0m
+D (1759) heap_init: New heap initialised at 0x3fce9710[0m
+[0;32mI (1759) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+D (1769) esp_psram: Allocating block of size 32768 bytes[0m
+V (1779) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1779) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (1789) intr_alloc: Connected src 52 to int 13 (cpu 0)[0m
+[0;32mI (1799) main_task: Calling app_main()[0m
+V (1799) partition: Loading the partition table[0m
+V (1809) mmap: actual_mapped_len is 0x10000[0m
+V (1809) calculated md5: 0x3fca7978   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1819) stored md5: 0x3c8e8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1829) partition: Partition table MD5 verified[0m
+[0;32mI (1859) example:take_picture: Initializing Wi-Fi...[0m
+D (1859) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1859) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1869) event: running task for loop 0x3fcb2750[0m
+D (1869) event: created task for loop 0x3fcb2750[0m
+D (1879) event: created event loop 0x3fcb2750[0m
+D (1879) esp_netif_lwip: check: remote, if=0x3fca7910 fn=0x420177ac[0m
+V (1889) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcb368c[0m
+D (1889) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1899) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1909) pp: pp rom version: e7ae62f[0m
+[0;32mI (1909) net80211: net80211 rom version: e7ae62f[0m
+D (1919) nvs: nvs_open_from_partition misc 1[0m
+I (1929) wifi:wifi driver task: 3fcb60c4, prio:23, stack:6656, core=0
+V (1929) esp_adapter: thread sem create: sem=0x3fcb6220[0m
+V (1929) esp_adapter: thread sem get: sem=0x3fcb6220[0m
+D (1939) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1949) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1949) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (1959) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (1969) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (1969) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (1979) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1989) nvs: nvs_get opmode 1[0m
+D (1989) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (1999) nvs: nvs_get sta.authmode 1[0m
+D (1999) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (1999) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (2009) nvs: nvs_get sta.chan 1[0m
+D (2009) nvs: nvs_get auto.conn 1[0m
+D (2009) nvs: nvs_get bssid.set 1[0m
+D (2019) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (2019) nvs: nvs_get sta.lis_intval 2[0m
+D (2019) nvs: nvs_get sta.phym 1[0m
+D (2029) nvs: nvs_get sta.phybw 1[0m
+D (2029) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (2039) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (2039) nvs: nvs_get sta.scan_method 1[0m
+D (2039) nvs: nvs_get sta.sort_method 1[0m
+D (2049) nvs: nvs_get sta.minrssi 1[0m
+D (2049) nvs: nvs_get sta.minauth 1[0m
+D (2049) nvs: nvs_get sta.pmf_e 1[0m
+D (2059) nvs: nvs_get sta.pmf_r 1[0m
+D (2059) nvs: nvs_get sta.btm_e 1[0m
+D (2059) nvs: nvs_get sta.rrm_e 1[0m
+D (2069) nvs: nvs_get sta.mbo_e 1[0m
+D (2069) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (2079) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (2079) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (2079) nvs: nvs_get ap.chan 1[0m
+D (2089) nvs: nvs_get ap.authmode 1[0m
+D (2089) nvs: nvs_get ap.hidden 1[0m
+D (2089) nvs: nvs_get ap.max.conn 1[0m
+D (2099) nvs: nvs_get bcn.interval 2[0m
+D (2099) nvs: nvs_get ap.phym 1[0m
+D (2099) nvs: nvs_get ap.phybw 1[0m
+D (2109) nvs: nvs_get ap.sndchan 1[0m
+D (2109) nvs: nvs_get ap.pmf_e 1[0m
+D (2109) nvs: nvs_get ap.pmf_r 1[0m
+D (2119) nvs: nvs_get ap.p_cipher 1[0m
+D (2119) nvs: nvs_get lorate 1[0m
+D (2119) nvs: nvs_get_str_or_blob country[0m
+D (2129) nvs: nvs_get ap.ftm_r 1[0m
+D (2129) nvs: nvs_get sta.ft 1[0m
+D (2139) nvs: nvs_get sta.owe 1[0m
+D (2139) nvs: nvs_get sta.trans_d 1[0m
+D (2139) nvs: nvs_get sta.sae_h2e 1[0m
+D (2149) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (2149) nvs: nvs_get sta.bss_retry 1[0m
+D (2149) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (2159) nvs: nvs_get sta.he_dcm 1[0m
+D (2159) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (2159) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (2169) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (2169) nvs: nvs_get sta.he_su_b_d 1[0m
+D (2179) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (2179) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (2179) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (2189) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (2189) nvs: nvs_get ap.sae_h2e 1[0m
+D (2199) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (2199) nvs: nvs_get nan.phym 1[0m
+D (2199) nvs: nvs_set ap.sndchan 1 1[0m
+I (2209) wifi:wifi firmware version: 3e0076f
+I (2209) wifi:wifi certification version: v7.0
+I (2219) wifi:config NVS flash: enabled
+I (2219) wifi:config nano formating: disabled
+I (2219) wifi:Init data frame dynamic rx buffer num: 32
+I (2229) wifi:Init static rx mgmt buffer num: 5
+I (2229) wifi:Init management short buffer num: 32
+I (2239) wifi:Init static tx buffer num: 16
+I (2239) wifi:Init tx cache buffer num: 32
+I (2239) wifi:Init static tx FG buffer num: 2
+I (2249) wifi:Init static rx buffer size: 1600
+I (2249) wifi:Init static rx buffer num: 10
+I (2259) wifi:Init dynamic rx buffer num: 32
+V (2259) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (2269) esp_adapter: thread sem get: sem=0x3fcb6220[0m
+[0;32mI (2269) wifi_init: rx ba win: 6[0m
+[0;32mI (2279) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2279) wifi_init: udp mbox: 6[0m
+[0;32mI (2279) wifi_init: tcp mbox: 6[0m
+[0;32mI (2289) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2289) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2299) wifi_init: tcp mss: 1440[0m
+[0;32mI (2299) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2309) wifi_init: WiFi RX IRAM OP enabled[0m
+V (2309) esp_adapter: thread sem get: sem=0x3fcb6220[0m
+D (2319) nvs: nvs_get opmode 1[0m
+V (2319) esp_adapter: thread sem get: sem=0x3fcb6220[0m
+D (2319) wifi:clear blacklist
+D (2329) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (2329) nvs: nvs_get sta.pmf_e 1[0m
+V (2329) esp_adapter: thread sem get: sem=0x3fcb6220[0m
+[0;32mI (2339) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+D (2349) phy_init: loading PHY init data from application binary[0m
+D (2349) nvs: nvs_open_from_partition phy 0[0m
+D (2359) nvs: nvs_get cal_version 4[0m
+V (2359) phy_init: phy_get_rf_cal_version: 670[0m
+D (2359) nvs: nvs_get_str_or_blob cal_mac[0m
+D (2369) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2369) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2379) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2389) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2399) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2399) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2409) nvs: nvs_get_str_or_blob cal_data[0m
+D (2419) nvs: nvs_close 3[0m
+D (2419) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2419) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2429) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2439) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2439) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2449) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2479) temperature_sensor: range changed, change to index 2[0m
+V (2499) wifi:ht20 freq=2412, chan=1
+D (2499) wifi:filter: set rx policy=0
+I (2499) wifi:mode : sta (f0:9e:9e:03:0f:e4)
+I (2509) wifi:enable tsf
+D (2509) wifi:filter: set rx policy=1
+D (2509) wifi:connect status 0 -> 0
+D (2509) event: running post WIFI_EVENT:41 with handler 0x4200a3ac and context 0x3fcd047c on loop 0x3fcb2750[0m
+D (2519) event: running post WIFI_EVENT:2 with handler 0x42019e3c and context 0x3fcb38ac on loop 0x3fcb2750[0m
+D (2529) wifi_init_default: wifi_start esp-netif:0x3fcb368c event-id2[0m
+D (2539) wifi_init_default: WIFI mac address: f0 9e 9e 3 f e4[0m
+V (2539) esp_adapter: thread sem create: sem=0x3fcd0bac[0m
+V (2549) esp_adapter: thread sem get: sem=0x3fcd0bac[0m
+D (2559) esp_netif_lwip: check: remote, if=0x3fcb368c fn=0x420171a0[0m
+[0;32mI (2559) example:take_picture: Wi-Fi initialized, connecting to SSID: TP-Link_2A33[0m
+D (2559) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2569) esp_netif_handlers: esp_netif action has started with netif0x3fcb368c from event_id=2[0m
+D (2579) esp_netif_lwip: check: remote, if=0x3fcb368c fn=0x42017a64[0m
+D (2589) esp_netif_lwip: esp_netif_start_api 0x3fcb368c[0m
+[0;32mI (2589) main_task: Returned from app_main()[0m
+D (2599) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcb368c[0m
+[0;32mI (2599) example:take_picture: Initializing camera...[0m
+D (2609) esp_netif_lwip: check: local, if=0x3fcb368c fn=0x42018204[0m
+D (2619) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb368c[0m
+V (2629) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb368c[0m
+D (2629) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2639) event: running post WIFI_EVENT:2 with handler 0x4200a3ac and context 0x3fcd047c on loop 0x3fcb2750[0m
+D (2639) gdma: new group (0) at 0x3c0e0c64[0m
+V (2649) esp_adapter: thread sem get: sem=0x3fcd0bac[0m
+D (2649) gdma: new pair (0,0) at 0x3c0e0cf0[0m
+D (2659) wifi:D (2659) gdma: new rx channel (0,0) at 0x3c0e0c24[0m
+Start wifi connect
+[0;32mI (2669) s3 ll_cam: DMA Channel=0[0m
+D (2669) wifi:connect status 0 -> 0[0;32mI (2669) cam_hal: cam init ok[0m
+
+D (2679) camera: Enabling XCLK output[0m
+D (2679) wifi:D (2679) camera: Initializing SCCB[0m
+connect chan=0[0;32mI (2689) sccb: pin_sda 4 pin_scl 5[0m
+
+[0;32mI (2689) sccb: sccb_i2c_port=1[0m
+V (2699) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (2699) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0xE[0m
+D (2709) intr_alloc: Connected src 43 to int 4 (cpu 1)[0m
+D (2689) wifi:first chan=1
+D (2719) camera: Searching for camera address[0m
+D (2719) wifi:connect status 0 -> 1
+D (2729) wifi:filter: set rx policy=3
+D (2729) wifi:clear scan ap list
+[0;32mI (2729) camera: Detected camera at address=0x30[0m
+D (2729) wifi:start scan: type=0x50f, priority=2, cb=0x42041468, arg=0x0, ss_state=0x1, time=2752560, index=0
+[0;32mI (2739) camera: Detected OV2640 camera[0m
+V (2749) wifi:D (2749) ov2640: OV2640 Attached[0m
+inter_channel_timeout: arg=0x0, ss_state=0x1[0;32mI (2759) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+
+D (2769) camera: Doing SW reset of sensor[0m
+D (2769) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (2779) wifi:change: chan<1,0>, dur<0,120>
+V (2779) wifi:enter start op, arg=0x3fca1182
+V (2779) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca1182, status=0
+V (2789) wifi:scan specific ssid=TP-Link_2A33
+V (2799) wifi:start max timer
+D (2799) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=34:e8:94:1b:2a:33
+V (2799) wifi:updated connection retries to 0
+D (2809) wifi:profile match: ss_state=0x7
+V (2809) wifi:scan histroy table is not full yet, add
+V (2819) wifi:add ssid=TP-Link_2A33, chan=1 to scan history
+D (2819) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=34:e8:94:1b:2a:33
+D (2829) wifi:profile match: ss_state=0x7
+V (2829) wifi:update scan history ssid=TP-Link_2A33, channel=1
+D (2839) wifi:scan end: arg=0x0, status=0, ss_state=0x7
+D (2839) wifi:find first mathched ssid, scan done
+V (2849) wifi:back home chan=<1,0>, current chan=<1,0>
+D (2849) wifi:filter: set rx policy=4
+D (2859) wifi:first chan=1
+[0;32mI (2849) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 12[0m
+V (2859) wifi:[0;32mI (2869) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer:  7680, lines_per_half_buffer: 24, dma_buffer_size: 15360[0m
+scan_done: arg=0x0, status=0, cur_time=2878177, scan_id=128, scan state=0[0;32mI (2879) cam_hal: buffer_size: 15360, half_buffer_size: 7680, node_buffer_size: 3840, node_cnt: 4, total_cnt: 5[0m
+
+[0;32mI (2899) cam_hal: Allocating 38400 Byte frame buffer in PSRAM[0m
+V (2899) wifi:[0;32mI (2899) cam_hal: Allocating 38400 Byte frame buffer in PSRAM[0m
+V (2909) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (2919) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (2919) intr_alloc: Connected src 66 to int 9 (cpu 1)[0m
+V (2929) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (2939) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (2939) intr_alloc: Connected src 24 to int 9 (cpu 1)[0m
+call scan_done cb, arg=0x0
+[0;32mI (2949) cam_hal: cam config ok[0m
+D (2949) wifi:D (2959) camera: Setting frame size to 160x120[0m
+handoff_cb: status=0
+[0;32mI (2959) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+V (2959) wifi:best bss has set.
+D (2969) wifi:ap found, mac=34:e8:94:1b:2a:33
+V (2979) wifi:bssid=34:e8:94:1b:2a:33, LR=0
+D (2979) wifi:going for connection with bssid=34:e8:94:1b:2a:33
+D (2989) wifi:new_bss=0x3fca1480, cur_bss=0x0, new_chan=<1,0>, cur_chan=1
+D (2989) wifi:filter: set rx policy=5
+I (2999) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+D (2999) wifi:connect_op: status=0, auth=5, cipher=3 
+D (3009) wifi:auth mode is not none
+D (3009) wifi:connect_bss: auth=1, reconnect=0
+I (3019) wifi:state: init -> auth (b0)
+D (3019) wifi:start 1s AUTH timer
+D (3019) wifi:clear scan ap list
+D (3029) wifi:recv auth: seq=2, status=0
+I (3029) wifi:state: auth -> assoc (0)
+D (3029) wifi:restart connect 1s timer for assoc
+[0;32mI (3039) example:take_picture: Taking picture...[0m
+D (3039) wifi:recv assoc: type=0x10
+D (3049) wifi:filter: set rx policy=6
+I (3049) wifi:state: assoc -> run (10)
+D (3049) wifi:start 10s connect timer for 4 way handshake
+V (3059) wifi:wpa_psk start
+D (3059) gdma: new tx channel (0,0) at 0x3c0f3ab8[0m
+D (3059) gdma: new pair (0,1) at 0x3c0f3b34[0m
+D (3069) gdma: new rx channel (0,1) at 0x3c0f3af4[0m
+D (3069) gdma: tx channel (0,0), (1:16) bytes aligned, burst enabled[0m
+D (3079) gdma: rx channel (0,1), (1:16) bytes aligned, burst disabled[0m
+V (3089) wifi:wpa_psk handle succeed
+V (3089) wifi:sta recv dup seq=0 tid=0, discard
+V (3089) wifi:tx process: alloc static tx buf, pb=0x0 l=135 hdr=0 data=135
+V (3109) wifi:wpa_psk start
+V (3109) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (3109) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (3119) intr_alloc: Connected src 77 to int 17 (cpu 0)[0m
+V (3129) wifi:wpa_psk handle succeed
+V (3129) wifi:tx process: alloc static tx buf, pb=0x0 l=113 hdr=0 data=113
+I (3129) wifi:connected with TP-Link_2A33, aid = 1, channel 1, BW20, bssid = 34:e8:94:1b:2a:33
+I (3139) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+D (3149) wifi:remove all except 34:e8:94:1b:2a:33 from rc list
+D (3149) wifi:clear blacklist
+D (3149) nvs: nvs_set sta.chan 1 1[0m
+D (3159) nvs: nvs_set_blob sta.apinfo 700[0m
+D (3159) wifi:filter: set rx policy=7
+I (3169) wifi:pm start, type: 1
+
+I (3169) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3179) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+D (3179) wifi:Send sta connected event
+D (3189) wifi:connect status 1 -> 5
+D (3189) wifi:obss scan is disabled
+D (3189) wifi:start obss scan: obss scan is stopped
+I (3199) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+D (3209) event: running post WIFI_EVENT:4 with handler 0x42019e6c and context 0x3fcb3914 on loop 0x3fcb2750[0m
+V (3209) esp_adapter: thread sem get: sem=0x3fcd0bac[0m
+D (3219) esp_netif_handlers: esp_netif action connected with netif0x3fcb368c from event_id=4[0m
+D (3229) esp_netif_lwip: check: remote, if=0x3fcb368c fn=0x42017e28[0m
+D (3229) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcb368c[0m
+D (3239) esp_netif_lwip: check: local, if=0x3fcb368c fn=0x42018204[0m
+D (3249) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb368c[0m
+V (3249) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb368c[0m
+D (3259) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (3259) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+D (3269) esp_netif_lwip: check: remote, if=0x3fcb368c fn=0x42017ce4[0m
+[0;32mI (3269) example:take_picture: Uploading image to Cloudinary...[0m
+D (3279) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcb368c[0m
+D (3289) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb368c[0m
+D (3299) esp_netif_lwip: if0x3fcb368c start ip lost tmr: interval=120[0m
+D (3309) esp_netif_lwip: starting dhcp client[0m
+cam_hal: EV-VSYNC-OVF
+V (3309) wifi:D (3309) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+tx process: alloc static tx buf, pb=0x3fca72cc l=350 hdr=0 data=350
+D (3319) HTTP_CLIENT: set post file length = 38432[0m
+D (3329) wifi:D (3329) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+eb is dhcp or dns sport = 68, dport = 67
+D (3339) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (3329) event: running post WIFI_EVENT:4 with handler 0x4200a3ac and context 0x3fcd047c on loop 0x3fcb2750[0m
+V (3359) wifi:[0;31mE (3349) esp-tls: couldn't get hostname for :api.cloudinary.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+tx process: alloc static tx buf, pb=0x3fcdb98c l=350 hdr=0 data=350[0;31mE (3369) esp-tls: Failed to open new connection[0m
+
+[0;31mE (3379) transport_base: Failed to open a new connection[0m
+D (3379) wifi:eb is dhcp or dns sport = 68, dport = 67
+[0;31mE (3379) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (3389) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (3389) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+V (3409) wifi:tx process: alloc static tx buf, pb=0x3fca7328 l=42 hdr=0 data=42
+D (3419) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (3809) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+V (3859) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+V (4309) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+D (4309) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcb371c[0m
+D (4309) esp_netif_lwip: if0x3fcb368c ip changed=1[0m
+D (4309) event: running post IP_EVENT:0 with handler 0x42019c8c and context 0x3fcb39fc on loop 0x3fcb2750[0m
+D (4319) wifi_init_default: Got IP wifi default handler entered[0m
+D (4329) esp_netif_handlers: esp_netif action got_ip with netif0x3fcb368c from event_id=0[0m
+[0;32mI (4339) esp_netif_handlers: sta ip: 192.168.0.136, mask: 255.255.255.0, gw: 192.168.0.1[0m
+D (4349) event: running post IP_EVENT:0 with handler 0x4200a3ac and context 0x3fcd049c on loop 0x3fcb2750[0m
+[0;32mI (4359) example:take_picture: Got IP: 192.168.0.136[0m
+V (4859) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+V (5859) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+V (6859) wifi:tx process: alloc static tx buf, pb=0x3fca7278 l=42 hdr=0 data=42
+[0;32mI (8409) example:take_picture: Taking picture...[0m
+[0;32mI (8409) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (8409) example:take_picture: Uploading image to Cloudinary...[0m
+D (8419) HTTP_CLIENT: set post file length = 38432[0m
+D (8419) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (8429) esp-tls: host:api.cloudinary.com: strlen 18[0m
+V (8439) wifi:tx process: alloc static tx buf, pb=0x3fcdb204 l=42 hdr=0 data=42
+I (8449) wifi:<ba-add>idx:0 (ifx:0, 34:e8:94:1b:2a:33), tid:0, ssn:2, winSize:64
+V (8449) wifi:tx process: alloc static tx buf, pb=0x3fcdb17c l=78 hdr=0 data=78
+D (8459) wifi:eb is dhcp or dns sport = 22492, dport = 53
+D (8689) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (8689) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (8689) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=58 hdr=0 data=58
+V (8759) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;31mE (8759) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (8769) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (8779) esp-tls: create_ssl_handle failed[0m
+[0;31mE (8779) esp-tls: Failed to open new connection[0m
+[0;31mE (8789) transport_base: Failed to open a new connection[0m
+V (8789) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;31mE (8789) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (8799) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (8799) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (8819) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (8859) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+V (13729) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=42 hdr=0 data=42
+[0;32mI (13819) example:take_picture: Taking picture...[0m
+[0;32mI (13819) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (13819) example:take_picture: Uploading image to Cloudinary...[0m
+D (13829) HTTP_CLIENT: set post file length = 38432[0m
+D (13829) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (13839) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (13849) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (13849) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (13859) wifi:tx process: alloc static tx buf, pb=0x3fca7a44 l=58 hdr=0 data=58
+V (14039) wifi:tx process: alloc static tx buf, pb=0x3fca7a44 l=54 hdr=0 data=54
+[0;31mE (14039) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (14039) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (14049) esp-tls: create_ssl_handle failed[0m
+[0;31mE (14059) esp-tls: Failed to open new connection[0m
+[0;31mE (14059) transport_base: Failed to open a new connection[0m
+V (14069) wifi:tx process: alloc static tx buf, pb=0x3fca7a44 l=54 hdr=0 data=54
+[0;31mE (14069) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (14079) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (14079) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (14099) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (14139) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;32mI (19099) example:take_picture: Taking picture...[0m
+[0;32mI (19099) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (19099) example:take_picture: Uploading image to Cloudinary...[0m
+D (19109) HTTP_CLIENT: set post file length = 38432[0m
+D (19109) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (19119) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (19129) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (19129) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (19139) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=58 hdr=0 data=58
+V (19209) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (19209) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (19209) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (19229) esp-tls: create_ssl_handle failed[0m
+[0;31mE (19229) esp-tls: Failed to open new connection[0m
+[0;31mE (19239) transport_base: Failed to open a new connection[0m
+V (19239) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (19239) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (19249) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (19249) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+D (19269) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (19289) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;32mI (24259) example:take_picture: Taking picture...[0m
+[0;32mI (24259) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (24259) example:take_picture: Uploading image to Cloudinary...[0m
+D (24269) HTTP_CLIENT: set post file length = 38432[0m
+D (24269) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (24279) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (24289) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (24289) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (24299) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=58 hdr=0 data=58
+V (24379) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (24379) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (24389) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (24399) esp-tls: create_ssl_handle failed[0m
+[0;31mE (24399) esp-tls: Failed to open new connection[0m
+[0;31mE (24409) transport_base: Failed to open a new connection[0m
+V (24409) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (24409) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (24429) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (24429) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (24439) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (24479) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;32mI (29439) example:take_picture: Taking picture...[0m
+[0;32mI (29439) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (29439) example:take_picture: Uploading image to Cloudinary...[0m
+D (29449) HTTP_CLIENT: set post file length = 38432[0m
+D (29449) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (29459) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (29469) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (29469) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (29479) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=58 hdr=0 data=58
+V (29529) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (29529) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (29539) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (29549) esp-tls: create_ssl_handle failed[0m
+[0;31mE (29549) esp-tls: Failed to open new connection[0m
+[0;31mE (29559) transport_base: Failed to open a new connection[0m
+V (29569) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (29569) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (29579) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (29579) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (29599) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (29669) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
+[0;32mI (34599) example:take_picture: Taking picture...[0m
+[0;32mI (34599) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (34599) example:take_picture: Uploading image to Cloudinary...[0m
+D (34609) HTTP_CLIENT: set post file length = 38432[0m
+D (34609) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (34619) esp-tls: host:api.cloudinary.com: strlen 18[0m
+D (34629) esp-tls: [sock=54] Resolved IPv4 address: 34.194.81.209[0m
+D (34629) esp-tls: [sock=54] Connecting to server. HOST: api.cloudinary.com, Port: 443[0m
+V (34639) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=58 hdr=0 data=58
+V (34729) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (34729) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (34739) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (34749) esp-tls: create_ssl_handle failed[0m
+[0;31mE (34749) esp-tls: Failed to open new connection[0m
+[0;31mE (34759) transport_base: Failed to open a new connection[0m
+V (34769) wifi:tx process: alloc static tx buf, pb=0x3fca7a48 l=54 hdr=0 data=54
+[0;31mE (34769) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (34779) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2750[0m
+[0;31mE (34779) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (34799) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2750[0m
+V (34819) wifi:tx process: alloc static tx buf, pb=0x3fcdb2c0 l=54 hdr=0 data=54
