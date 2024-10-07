@@ -1,0 +1,193 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d08
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  3 2024 10:22:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e3bch ( 58300) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0001e3e4 vaddr=3fc94900 size=01c34h (  7220) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=26264h (156260) map[0m
+[0;32mI (145) esp_image: segment 3: paddr=0004628c vaddr=3fc96534 size=01268h (  4712) load[0m
+[0;32mI (146) esp_image: segment 4: paddr=000474fc vaddr=40374000 size=10840h ( 67648) load[0m
+[0;32mI (172) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (172) boot: Disabling RNG early entropy source...[0m
+[0;32mI (183) cpu_start: Multicore app[0m
+V (184) mmap: after coalescing, 1 regions are left[0m
+D (184) cpu_start: Pro cpu up[0m
+D (184) cpu_start: Starting app cpu, entry point is 0x40375374[0m
+D (0) cpu_start: App cpu up[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_DE R(R19: 8c)o rclek :1  RTCa_SccLeOsWs_ CeLrKr ocra liinbtrra tcilorn  va&lu e:e n38a 0m2a0s3k5[ 0mi
+: 0x1f
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) cpu_start: Application information:[0m
+[0;32mI (229) cpu_start: Project name:     netstick-test[0m
+[0;32mI (234) cpu_start: App version:      1[0m
+[0;32mI (239) cpu_start: Compile time:     Oct  7 2024 09:46:08[0m
+[0;32mI (245) cpu_start: ELF file SHA256:  0163467a9...[0m
+[0;32mI (250) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v0.2[0m
+V (270) memory_layout: reserved range is 0x3c03e39c - 0x3c03e3c4[0m
+D (276) memory_layout: Checking 6 reserved memory ranges:[0m
+D (281) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc94900[0m
+D (288) memory_layout: Reserved memory range 0x3fc94900 - 0x3fc98088[0m
+D (294) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000[0m
+D (301) memory_layout: Reserved memory range 0x40374000 - 0x40384900[0m
+D (307) memory_layout: Reserved memory range 0x600fe000 - 0x600fe010[0m
+D (313) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000[0m
+D (320) memory_layout: Building list of available memory regions:[0m
+V (326) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000[0m
+V (333) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc94900[0m
+V (342) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000[0m
+V (348) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc94900[0m
+V (358) memory_layout: Start of region 0x3fc94900 - 0x3fca0000 overlaps reserved 0x3fc94900 - 0x3fc98088[0m
+D (367) memory_layout: Available memory region 0x3fc98088 - 0x3fca0000[0m
+V (374) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000[0m
+D (380) memory_layout: Available memory region 0x3fca0000 - 0x3fcb0000[0m
+V (387) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000[0m
+D (394) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000[0m
+V (400) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (407) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000[0m
+V (413) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000[0m
+D (420) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000[0m
+V (427) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710[0m
+D (433) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710[0m
+V (440) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000[0m
+V (446) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000[0m
+D (456) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34[0m
+V (462) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000[0m
+D (469) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000[0m
+V (476) memory_layout: Examining memory region 0x600fe000 - 0x60100000[0m
+V (482) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe010[0m
+V (492) memory_layout: End of region 0x600fe010 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000[0m
+D (501) memory_layout: Available memory region 0x600fe010 - 0x600fffe8[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (515) heap_init: New heap initialised at 0x3fc98088[0m
+[0;32mI (520) heap_init: At 3FC98088 len 00051688 (325 KiB): RAM[0m
+[0;32mI (526) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (532) heap_init: New heap initialised at 0x3fcf0000[0m
+[0;32mI (537) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (544) heap_init: New heap initialised at 0x600fe010[0m
+[0;32mI (549) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+V (555) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (561) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (570) intr_alloc: Connected src 39 to int 2 (cpu 0)[0m
+V (575) memspi: raw_chip_id: 1740C8
+[0m
+V (578) memspi: chip_id: C84017
+[0m
+V (582) memspi: raw_chip_id: 1740C8
+[0m
+V (585) memspi: chip_id: C84017
+[0m
+D (589) spi_flash: trying chip: issi[0m
+D (592) spi_flash: trying chip: gd[0m
+[0;32mI (596) spi_flash: detected chip: gd[0m
+[0;32mI (600) spi_flash: flash io: dio[0m
+[0;33mW (604) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (617) cpu_start: calling init function: 0x420147e0[0m
+D (622) cpu_start: calling init function: 0x4200fdac[0m
+D (627) cpu_start: calling init function: 0x4200ef60[0m
+[0;33mW (632) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (643) cpu_start: calling init function: 0x4037a5b0[0m
+D (648) cpu_start: calling init function: 0x42001a0c[0m
+D (653) cpu_start: calling init function: 0x42006d18 on core: 0[0m
+V (659) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (665) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02[0m
+D (673) intr_alloc: Connected src 59 to int 3 (cpu 0)[0m
+D (679) cpu_start: calling init function: 0x42004824 on core: 0[0m
+[0;32mI (685) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (692) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (698) cpu_start: calling init function: 0x42002b38 on core: 0[0m
+V (705) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (711) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (719) intr_alloc: Connected src 79 to int 9 (cpu 0)[0m
+D (724) app_start: Starting scheduler on CPU0[0m
+V (728) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (728) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (728) intr_alloc: Connected src 57 to int 12 (cpu 0)[0m
+V (728) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (738) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E[0m
+D (738) intr_alloc: Connected src 80 to int 2 (cpu 1)[0m
+D (748) app_start: Starting scheduler on CPU1[0m
+V (748) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (758) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402[0m
+D (768) intr_alloc: Connected src 58 to int 3 (cpu 1)[0m
+[0;32mI (728) main_task: Started on CPU0[0m
+D (778) heap_init: New heap initialised at 0x3fce9710[0m
+V (778) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (788) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (798) intr_alloc: Connected src 52 to int 13 (cpu 0)[0m
+[0;32mI (798) main_task: Calling app_main()[0m
+[0;32mI (808) main_task: Returned from app_main()[0m
+[0;32mI (808) example:take_picture: Initializing camera...[0m
+[0;32mI (818) example:take_picture: Camera pins:[0m
+[0;32mI (818) example:take_picture: PWDN: -1[0m
+[0;32mI (828) example:take_picture: RESET: -1[0m
+[0;32mI (828) example:take_picture: XCLK: 15[0m
+[0;32mI (838) example:take_picture: SIOD: 4[0m
+[0;32mI (838) example:take_picture: SIOC: 5[0m
+[0;32mI (838) example:take_picture: D7: 39[0m
+[0;32mI (848) example:take_picture: D6: 41[0m
+[0;32mI (848) example:take_picture: D5: 40[0m
+[0;32mI (858) example:take_picture: D4: 42[0m
+[0;32mI (858) example:take_picture: D3: 21[0m
+[0;32mI (868) example:take_picture: D2: 38[0m
+[0;32mI (868) example:take_picture: D1: 14[0m
+[0;32mI (868) example:take_picture: D0: 13[0m
+[0;32mI (878) example:take_picture: VSYNC: 2[0m
+[0;32mI (878) example:take_picture: HREF: 12[0m
+[0;32mI (888) example:take_picture: PCLK: 1[0m
+D (888) gdma: new group (0) at 0x3fc9b000[0m
+D (898) gdma: new pair (0,0) at 0x3fc9b08c[0m
+D (898) gdma: new rx channel (0,0) at 0x3fc9afc0[0m
+[0;32mI (898) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (908) cam_hal: cam init ok[0m
+D (908) camera: Enabling XCLK output[0m
+D (918) camera: Initializing SCCB[0m
+[0;32mI (918) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (918) sccb: sccb_i2c_port=1[0m
+V (928) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (928) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0xE[0m
+D (938) intr_alloc: Connected src 43 to int 4 (cpu 1)[0m
+D (948) camera: Searching for camera address[0m
+[0;32mI (958) camera: Detected camera at address=0x30[0m
+[0;32mI (958) camera: Detected OV2640 camera[0m
+D (958) ov2640: OV2640 Attached[0m
+[0;32mI (958) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+D (968) camera: Doing SW reset of sensor[0m
+[0;32mI (1048) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (1058) cam_hal: Allocating 3840 Byte frame buffer in PSRAM[0m
+[0;31mE (1058) cam_hal: cam_dma_config(301): frame buffer malloc failed[0m
+[0;31mE (1068) cam_hal: cam_config(389): cam_dma_config failed[0m
+[0;31mE (1068) gdma: gdma_disconnect(309): no peripheral is connected to the channel[0m
+D (1078) gdma: del rx channel (0,0)[0m
+D (1088) gdma: del pair (0,0)[0m
+D (1088) gdma: del group 0[0m
+[0;31mE (1088) camera: Camera config failed with error 0xffffffff[0m
+V (1098) intr_alloc: esp_intr_free: Disabling int, killing handler[0m
+[0;31mE (1098) example:take_picture: Camera Init Failed with error 0xffffffff[0m
