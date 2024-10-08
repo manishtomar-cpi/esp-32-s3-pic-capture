@@ -13,15 +13,19 @@
 #include <esp_http_client.h>
 #include "esp_netif.h"
 #include "cJSON.h"
+#include <stdio.h>
+#include <inttypes.h>
 
 
 static const char *TAG = "example:take_picture";
 
 // Cloudinary information
-const char *CLOUDINARY_UPLOAD_PRESET = "esp32_upload";  // Replace with your upload preset
-const char *CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dliospbvi/image/upload";  // Replace with your Cloudinary upload URL
+const char *CLOUDINARY_UPLOAD_PRESET = "esp32_upload";  
+const char *CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dliospbvi/image/upload";  
 
+// AWS S3 configuration
 
+//for using the refvfevfdver
 
 
 #if ESP_CAMERA_SUPPORTED
@@ -51,6 +55,20 @@ camera_config_t camera_config = {
     .fb_count       = 2,     // Use double buffering
     .fb_location    = CAMERA_FB_IN_PSRAM // Store frame buffers in PSRAM
 };
+
+// Function to generate a unique file name using timestamp
+static void generate_unique_filename(char *filename, size_t len)
+{
+    time_t now;
+    time(&now);  // Get current system time
+    struct tm timeinfo;
+    localtime_r(&now, &timeinfo);
+
+    // Generate a filename based on the current time
+    snprintf(filename, len, "esp_image_%04d%02d%02d_%02d%02d%02d.raw",
+             timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday,
+             timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec);
+}
 
 // Function to initialize the camera
 static esp_err_t init_camera(void)
@@ -146,69 +164,53 @@ void print_network_info(void)
     }
 }
 
-esp_err_t upload_image_to_cloudinary(uint8_t *image_data, size_t image_len)
+esp_err_t upload_image_to_s3(uint8_t *image_data, size_t image_len, const char *presigned_url)
 {
-    ESP_LOGI(TAG, "Uploading image to Cloudinary...");
+    ESP_LOGI(TAG, "Uploading image to S3...");
 
-    // Prepare the POST payload (upload preset and image data)
-    char *post_data;
-    asprintf(&post_data, "upload_preset=%s&file=", CLOUDINARY_UPLOAD_PRESET);
-
-    // Create buffer for payload (preset + image data)
-    size_t total_size = strlen(post_data) + image_len;
-    char *payload = malloc(total_size);
-
-    // Copy the upload preset data to the payload
-    memcpy(payload, post_data, strlen(post_data));
-
-    // Append the image data after the preset
-    memcpy(payload + strlen(post_data), image_data, image_len);
-
-    free(post_data);
-
-    // HTTP client configuration with SSL verification disabled
+    // HTTP client configuration for the pre-signed URL
     esp_http_client_config_t config = {
-        .url = CLOUDINARY_UPLOAD_URL,
-        .method = HTTP_METHOD_POST,
-        .cert_pem = NULL,  // Disable SSL verification
-        .use_global_ca_store = false,
-        .skip_cert_common_name_check = true,  // Skip certificate verification
-        .transport_type = HTTP_TRANSPORT_OVER_SSL,  // Force SSL transport
+        .url = presigned_url,  // Use the pre-signed URL here
+        .method = HTTP_METHOD_PUT,
+        .cert_pem = NULL,      // No SSL verification required for pre-signed URL
     };
 
     esp_http_client_handle_t client = esp_http_client_init(&config);
 
     // Set headers and payload
-    esp_http_client_set_header(client, "Content-Type", "multipart/form-data");
-    esp_http_client_set_post_field(client, payload, total_size);
+    esp_http_client_set_header(client, "Content-Type", "application/octet-stream");
+    esp_http_client_set_post_field(client, (const char*)image_data, image_len);
 
-    // Perform the POST request
+    // Perform the PUT request
     esp_err_t err = esp_http_client_perform(client);
     if (err == ESP_OK)
     {
-        ESP_LOGI(TAG, "Image uploaded successfully to Cloudinary");
+        ESP_LOGI(TAG, "Image uploaded successfully to S3");
 
-        // Read and log the response from Cloudinary
-        char buffer[512];  // Buffer to hold the response from Cloudinary
-        int data_read = esp_http_client_read(client, buffer, sizeof(buffer) - 1);
-        if (data_read >= 0) {
-            buffer[data_read] = 0;  // Null-terminate the response string
-            ESP_LOGI(TAG, "Cloudinary Response: %s", buffer);
-        } else {
-            ESP_LOGE(TAG, "Failed to read response from Cloudinary");
+        // Check the HTTP status code
+        int status_code = esp_http_client_get_status_code(client);
+        ESP_LOGI(TAG, "HTTP Status = %d", status_code);
+
+        if (status_code == 200)
+        {
+            ESP_LOGI(TAG, "Upload successful");
+        }
+        else
+        {
+            ESP_LOGE(TAG, "Upload failed with status code %d", status_code);
         }
     }
     else
     {
-        ESP_LOGE(TAG, "Image upload to Cloudinary failed: %s", esp_err_to_name(err));
+        ESP_LOGE(TAG, "Image upload to S3 failed: %s", esp_err_to_name(err));
     }
 
     // Cleanup
-    free(payload);
     esp_http_client_cleanup(client);
 
     return err;
 }
+
 
 
 
@@ -233,11 +235,23 @@ void app_main_task(void *pvParameters)
 
     ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes", pic->len);
 
-    // Upload the picture to Cloudinary
-    esp_err_t err = upload_image_to_cloudinary(pic->buf, pic->len);
+    // Generate unique filename for the image
+    char unique_filename[64];
+    generate_unique_filename(unique_filename, sizeof(unique_filename));
+
+        // Replace with your pre-signed URL
+    const char *presigned_url = "https://esp32-s3-images.s3.eu-north-1.amazonaws.com/esp_image_20241008_150711.raw?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAZI2LH2QM6QF4CTXW%2F20241008%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20241008T140711Z&X-Amz-Expires=18000&X-Amz-Signature=0377876908da84769b3be186bf54d7c25f49fd0f370432d8c92023d415b49a12&X-Amz-SignedHeaders=host&x-id=PutObject";  // Replace with the actual pre-signed URL
+    ESP_LOGI(TAG, "Generated presigned URL: %s", presigned_url);
+
+    // Upload the picture to S3
+    esp_err_t err = upload_image_to_s3(pic->buf, pic->len, presigned_url);
     if (err == ESP_OK)
     {
-        ESP_LOGI(TAG, "Image successfully uploaded");
+        ESP_LOGI(TAG, "Image successfully uploaded with name: %s", unique_filename);
+    }
+    else
+    {
+        ESP_LOGE(TAG, "Failed to upload image.");
     }
 
     esp_camera_fb_return(pic);  // Release the frame buffer
