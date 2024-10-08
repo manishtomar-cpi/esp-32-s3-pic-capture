@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "netstick-test",
-    "project_version":    "d37f2db-dirty",
+    "project_version":    "72abfd2-dirty",
     "project_path":       "C:/Users/manish.tomar/workspace/netstick-test",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "C:/Users/manish.tomar/workspace/netstick-test/build",

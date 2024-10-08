@@ -1,4 +1,3 @@
-
 #include <esp_log.h>
 #include <esp_system.h>
 #include <nvs_flash.h>
@@ -13,12 +12,17 @@
 #include <esp_netif.h>
 #include <esp_http_client.h>
 #include "esp_netif.h"
+#include "cJSON.h"
+
 
 static const char *TAG = "example:take_picture";
 
 // Cloudinary information
 const char *CLOUDINARY_UPLOAD_PRESET = "esp32_upload";  // Replace with your upload preset
 const char *CLOUDINARY_UPLOAD_URL = "https://api.cloudinary.com/v1_1/dliospbvi/image/upload";  // Replace with your Cloudinary upload URL
+
+
+
 
 #if ESP_CAMERA_SUPPORTED
 camera_config_t camera_config = {
@@ -208,7 +212,6 @@ esp_err_t upload_image_to_cloudinary(uint8_t *image_data, size_t image_len)
 
 
 
-// Main task to take pictures and upload them
 void app_main_task(void *pvParameters)
 {
 #if ESP_CAMERA_SUPPORTED
@@ -218,37 +221,37 @@ void app_main_task(void *pvParameters)
         return;
     }
 
-    while (1)
+    ESP_LOGI(TAG, "Taking picture...");
+    camera_fb_t *pic = esp_camera_fb_get();
+
+    if (!pic)
     {
-        ESP_LOGI(TAG, "Taking picture...");
-        camera_fb_t *pic = esp_camera_fb_get();
-
-        if (!pic)
-        {
-            ESP_LOGE(TAG, "Failed to capture image");
-            vTaskDelay(pdMS_TO_TICKS(5000)); // Wait for 5 seconds before retrying
-            continue;                        // Retry after delay
-        }
-
-        ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes", pic->len);
-
-        // Upload the picture to Cloudinary
-        esp_err_t err = upload_image_to_cloudinary(pic->buf, pic->len);
-        if (err == ESP_OK)
-        {
-            ESP_LOGI(TAG, "Image successfully uploaded");
-        }
-
-        esp_camera_fb_return(pic);  // Release the frame buffer
-
-        vTaskDelay(pdMS_TO_TICKS(5000)); // Wait for 5 seconds before taking the next picture
+        ESP_LOGE(TAG, "Failed to capture image");
+        vTaskDelete(NULL);  // Stop the task if the image capture fails
+        return;
     }
+
+    ESP_LOGI(TAG, "Picture taken! Its size was: %zu bytes", pic->len);
+
+    // Upload the picture to Cloudinary
+    esp_err_t err = upload_image_to_cloudinary(pic->buf, pic->len);
+    if (err == ESP_OK)
+    {
+        ESP_LOGI(TAG, "Image successfully uploaded");
+    }
+
+    esp_camera_fb_return(pic);  // Release the frame buffer
+
+    // Stop the program after one successful upload
+    ESP_LOGI(TAG, "Stopping program after successful image upload.");
+    vTaskDelete(NULL);  // End the task after successful upload
+
 #else
     ESP_LOGE(TAG, "Camera support is not available for this chip");
     vTaskDelete(NULL); // Delete the task if camera not supported
-    return;
 #endif
 }
+
 
 // Application entry point
 void app_main(void)

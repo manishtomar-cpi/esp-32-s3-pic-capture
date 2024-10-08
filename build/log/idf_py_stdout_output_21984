@@ -1,0 +1,1630 @@
+[0;32mI (138) esp_image: segment 1: paddr=00044684 vaddr=3fc9b0ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42009fd1
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2024 16:50:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=3465ch (214620) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00044684 vaddr=3fc9b000 size=04e58h ( 20056) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=000494e4 vaddr=40374000 size=06b34h ( 27444) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=acbb8h (707512) map[0m
+[0;32mI (279) esp_image: segment 4: paddr=000fcbe0 vaddr=4037ab34 size=103dch ( 66524) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (315) cpu_start: Multicore app[0m
+V (316) mmap: after coalescing, 1 regions are left[0m
+[0;32mI (316) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (318) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (324) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (329) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (334) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (340) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (345) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (351) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (356) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (362) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (368) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (373) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (378) esp_psram: Speed: 40MHz[0m
+V (382) mmap: found laddr is 0xf0000[0m
+V (385) esp_psram: 8bit-aligned-region: actual_mapped_len is 0x800000 bytes[0m
+V (392) esp_psram: 8bit-aligned-range: 0x800000 B, starting from: 0x3c0f0000[0m
+D (400) cpu_start: Pro cpu up[0m
+D (403) cpu_start: Starting app cpu, entry point is 0x4037556c[0m
+D (0) cpu_start: App cpu up[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 1 access error intr clr & ena mask is: 0x1f
+[0;32mI (1139) esp_psram: SPI SRAM memory test OK[0m
+D (1148) clk: RTC_SLOW_CLK calibration value: 3824269[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+[0;32mI (1154) cpu_start: Pro cpu start user code[0m
+[0;32mI (1157) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1162) cpu_start: Application information:[0m
+[0;32mI (1167) cpu_start: Project name:     netstick-test[0m
+[0;32mI (1172) cpu_start: App version:      72abfd2-dirty[0m
+[0;32mI (1178) cpu_start: Compile time:     Oct  8 2024 09:59:56[0m
+[0;32mI (1184) cpu_start: ELF file SHA256:  444d659c1...[0m
+[0;32mI (1190) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (1195) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (1200) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (1205) cpu_start: Chip rev:         v0.2[0m
+V (1210) memory_layout: reserved range is 0x3c0e4634 - 0x3c0e4664[0m
+D (1216) memory_layout: Checking 7 reserved memory ranges:[0m
+D (1221) memory_layout: Reserved memory range 0x3c000000 - 0x3e000000[0m
+D (1228) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9b000[0m
+D (1234) memory_layout: Reserved memory range 0x3fc9b000 - 0x3fca3fb0[0m
+D (1241) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000[0m
+D (1247) memory_layout: Reserved memory range 0x40374000 - 0x4038b000[0m
+D (1254) memory_layout: Reserved memory range 0x600fe000 - 0x600fe010[0m
+D (1260) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000[0m
+D (1267) memory_layout: Building list of available memory regions:[0m
+V (1273) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000[0m
+V (1280) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1289) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000[0m
+V (1295) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1305) memory_layout: Region 0x3fc9b000 - 0x3fca0000 inside of reserved 0x3fc9b000 - 0x3fca3fb0[0m
+V (1314) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000[0m
+V (1321) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9b000 - 0x3fca3fb0[0m
+D (1330) memory_layout: Available memory region 0x3fca3fb0 - 0x3fcb0000[0m
+V (1337) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000[0m
+D (1344) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000[0m
+V (1350) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (1357) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000[0m
+V (1364) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000[0m
+D (1370) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000[0m
+V (1377) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710[0m
+D (1384) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710[0m
+V (1390) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000[0m
+V (1397) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000[0m
+D (1407) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34[0m
+V (1413) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000[0m
+D (1420) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000[0m
+V (1427) memory_layout: Examining memory region 0x3c000000 - 0x3e000000[0m
+V (1433) memory_layout: Region 0x3c000000 - 0x3e000000 inside of reserved 0x3c000000 - 0x3e000000[0m
+V (1442) memory_layout: Examining memory region 0x600fe000 - 0x60100000[0m
+V (1449) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe010[0m
+V (1459) memory_layout: End of region 0x600fe010 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000[0m
+D (1468) memory_layout: Available memory region 0x600fe010 - 0x600fffe8[0m
+[0;32mI (1475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (1482) heap_init: New heap initialised at 0x3fca3fb0[0m
+[0;32mI (1487) heap_init: At 3FCA3FB0 len 00045760 (277 KiB): RAM[0m
+[0;32mI (1493) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (1500) heap_init: New heap initialised at 0x3fcf0000[0m
+[0;32mI (1505) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (1511) heap_init: New heap initialised at 0x600fe010[0m
+[0;32mI (1516) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (1523) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+V (1530) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1537) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1545) intr_alloc: Connected src 39 to int 2 (cpu 0)[0m
+V (1551) memspi: raw_chip_id: 1740C8
+[0m
+V (1554) memspi: chip_id: C84017
+[0m
+V (1557) memspi: raw_chip_id: 1740C8
+[0m
+V (1561) memspi: chip_id: C84017
+[0m
+D (1565) spi_flash: trying chip: issi[0m
+D (1568) spi_flash: trying chip: gd[0m
+[0;32mI (1572) spi_flash: detected chip: gd[0m
+[0;32mI (1576) spi_flash: flash io: dio[0m
+[0;33mW (1580) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (1593) cpu_start: calling init function: 0x4208c50c[0m
+D (1599) cpu_start: calling init function: 0x4208ba28[0m
+D (1604) cpu_start: calling init function: 0x4201a8c0[0m
+D (1609) cpu_start: calling init function: 0x42012968[0m
+D (1614) cpu_start: calling init function: 0x42011af8[0m
+[0;33mW (1619) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (1630) cpu_start: calling init function: 0x4037c71c[0m
+D (1635) cpu_start: calling init function: 0x420021cc[0m
+D (1640) cpu_start: calling init function: 0x420079bc on core: 0[0m
+V (1646) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1653) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02[0m
+D (1661) intr_alloc: Connected src 59 to int 3 (cpu 0)[0m
+D (1666) cpu_start: calling init function: 0x42005204 on core: 0[0m
+[0;32mI (1672) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1679) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (1686) cpu_start: calling init function: 0x42003360 on core: 0[0m
+V (1693) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1699) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1707) intr_alloc: Connected src 79 to int 9 (cpu 0)[0m
+D (1712) app_start: Starting scheduler on CPU0[0m
+V (1717) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1717) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (1717) intr_alloc: Connected src 57 to int 12 (cpu 0)[0m
+V (1717) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1727) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E[0m
+D (1727) intr_alloc: Connected src 80 to int 2 (cpu 1)[0m
+D (1737) app_start: Starting scheduler on CPU1[0m
+V (1737) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1747) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402[0m
+D (1757) intr_alloc: Connected src 58 to int 3 (cpu 1)[0m
+[0;32mI (1717) main_task: Started on CPU0[0m
+D (1767) heap_init: New heap initialised at 0x3fce9710[0m
+[0;32mI (1767) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+D (1777) esp_psram: Allocating block of size 32768 bytes[0m
+V (1787) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1787) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (1797) intr_alloc: Connected src 52 to int 13 (cpu 0)[0m
+[0;32mI (1807) main_task: Calling app_main()[0m
+V (1807) partition: Loading the partition table[0m
+V (1817) mmap: actual_mapped_len is 0x10000[0m
+V (1817) calculated md5: 0x3fca7998   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1827) stored md5: 0x3c8f8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1837) partition: Partition table MD5 verified[0m
+[0;32mI (1867) example:take_picture: Initializing Wi-Fi...[0m
+D (1867) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1867) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1877) event: running task for loop 0x3fcb2770[0m
+D (1877) event: created task for loop 0x3fcb2770[0m
+D (1887) event: created event loop 0x3fcb2770[0m
+D (1887) esp_netif_lwip: check: remote, if=0x3fca7930 fn=0x420183dc[0m
+V (1897) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcb36ac[0m
+D (1897) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1907) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1917) pp: pp rom version: e7ae62f[0m
+[0;32mI (1917) net80211: net80211 rom version: e7ae62f[0m
+D (1927) nvs: nvs_open_from_partition misc 1[0m
+I (1937) wifi:wifi driver task: 3fcb60e4, prio:23, stack:6656, core=0
+V (1937) esp_adapter: thread sem create: sem=0x3fcb6240[0m
+V (1937) esp_adapter: thread sem get: sem=0x3fcb6240[0m
+D (1947) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1957) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1957) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (1967) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (1977) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (1977) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (1987) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1997) nvs: nvs_get opmode 1[0m
+D (1997) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (2007) nvs: nvs_get sta.authmode 1[0m
+D (2007) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (2007) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (2017) nvs: nvs_get sta.chan 1[0m
+D (2017) nvs: nvs_get auto.conn 1[0m
+D (2017) nvs: nvs_get bssid.set 1[0m
+D (2027) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (2027) nvs: nvs_get sta.lis_intval 2[0m
+D (2027) nvs: nvs_get sta.phym 1[0m
+D (2037) nvs: nvs_get sta.phybw 1[0m
+D (2037) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (2047) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (2047) nvs: nvs_get sta.scan_method 1[0m
+D (2047) nvs: nvs_get sta.sort_method 1[0m
+D (2057) nvs: nvs_get sta.minrssi 1[0m
+D (2057) nvs: nvs_get sta.minauth 1[0m
+D (2057) nvs: nvs_get sta.pmf_e 1[0m
+D (2067) nvs: nvs_get sta.pmf_r 1[0m
+D (2067) nvs: nvs_get sta.btm_e 1[0m
+D (2067) nvs: nvs_get sta.rrm_e 1[0m
+D (2077) nvs: nvs_get sta.mbo_e 1[0m
+D (2077) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (2087) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (2087) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (2087) nvs: nvs_get ap.chan 1[0m
+D (2097) nvs: nvs_get ap.authmode 1[0m
+D (2097) nvs: nvs_get ap.hidden 1[0m
+D (2097) nvs: nvs_get ap.max.conn 1[0m
+D (2107) nvs: nvs_get bcn.interval 2[0m
+D (2107) nvs: nvs_get ap.phym 1[0m
+D (2107) nvs: nvs_get ap.phybw 1[0m
+D (2117) nvs: nvs_get ap.sndchan 1[0m
+D (2117) nvs: nvs_get ap.pmf_e 1[0m
+D (2117) nvs: nvs_get ap.pmf_r 1[0m
+D (2127) nvs: nvs_get ap.p_cipher 1[0m
+D (2127) nvs: nvs_get lorate 1[0m
+D (2127) nvs: nvs_get_str_or_blob country[0m
+D (2137) nvs: nvs_get ap.ftm_r 1[0m
+D (2137) nvs: nvs_get sta.ft 1[0m
+D (2147) nvs: nvs_get sta.owe 1[0m
+D (2147) nvs: nvs_get sta.trans_d 1[0m
+D (2147) nvs: nvs_get sta.sae_h2e 1[0m
+D (2157) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (2157) nvs: nvs_get sta.bss_retry 1[0m
+D (2157) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (2167) nvs: nvs_get sta.he_dcm 1[0m
+D (2167) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (2167) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (2177) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (2177) nvs: nvs_get sta.he_su_b_d 1[0m
+D (2187) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (2187) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (2187) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (2197) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (2197) nvs: nvs_get ap.sae_h2e 1[0m
+D (2207) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (2207) nvs: nvs_get nan.phym 1[0m
+D (2207) nvs: nvs_set ap.sndchan 1 1[0m
+I (2217) wifi:wifi firmware version: 3e0076f
+I (2217) wifi:wifi certification version: v7.0
+I (2227) wifi:config NVS flash: enabled
+I (2227) wifi:config nano formating: disabled
+I (2227) wifi:Init data frame dynamic rx buffer num: 32
+I (2237) wifi:Init static rx mgmt buffer num: 5
+I (2237) wifi:Init management short buffer num: 32
+I (2247) wifi:Init static tx buffer num: 16
+I (2247) wifi:Init tx cache buffer num: 32
+I (2247) wifi:Init static tx FG buffer num: 2
+I (2257) wifi:Init static rx buffer size: 1600
+I (2257) wifi:Init static rx buffer num: 10
+I (2267) wifi:Init dynamic rx buffer num: 32
+V (2267) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (2277) esp_adapter: thread sem get: sem=0x3fcb6240[0m
+[0;32mI (2277) wifi_init: rx ba win: 6[0m
+[0;32mI (2287) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2287) wifi_init: udp mbox: 6[0m
+[0;32mI (2287) wifi_init: tcp mbox: 6[0m
+[0;32mI (2297) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2297) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2307) wifi_init: tcp mss: 1440[0m
+[0;32mI (2307) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2317) wifi_init: WiFi RX IRAM OP enabled[0m
+V (2317) esp_adapter: thread sem get: sem=0x3fcb6240[0m
+D (2327) nvs: nvs_get opmode 1[0m
+V (2327) esp_adapter: thread sem get: sem=0x3fcb6240[0m
+D (2327) wifi:clear blacklist
+D (2337) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (2337) nvs: nvs_get sta.pmf_e 1[0m
+V (2337) esp_adapter: thread sem get: sem=0x3fcb6240[0m
+[0;32mI (2347) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+D (2357) phy_init: loading PHY init data from application binary[0m
+D (2357) nvs: nvs_open_from_partition phy 0[0m
+D (2367) nvs: nvs_get cal_version 4[0m
+V (2367) phy_init: phy_get_rf_cal_version: 670[0m
+D (2367) nvs: nvs_get_str_or_blob cal_mac[0m
+D (2377) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2377) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2387) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2397) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2407) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2407) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2417) nvs: nvs_get_str_or_blob cal_data[0m
+D (2427) nvs: nvs_close 3[0m
+D (2427) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2427) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2437) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2447) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2447) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2457) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2487) temperature_sensor: range changed, change to index 2[0m
+V (2497) wifi:ht20 freq=2412, chan=1
+D (2507) wifi:filter: set rx policy=0
+I (2507) wifi:mode : sta (f0:9e:9e:03:0f:e4)
+I (2507) wifi:enable tsf
+D (2507) wifi:filter: set rx policy=1
+D (2507) wifi:connect status 0 -> 0
+D (2507) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+D (2517) event: running post WIFI_EVENT:2 with handler 0x4201ab38 and context 0x3fcb38cc on loop 0x3fcb2770[0m
+D (2527) wifi_init_default: wifi_start esp-netif:0x3fcb36ac event-id2[0m
+D (2537) wifi_init_default: WIFI mac address: f0 9e 9e 3 f e4[0m
+V (2547) esp_adapter: thread sem create: sem=0x3fcd0bcc[0m
+V (2547) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (2557) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42017dd0[0m
+[0;32mI (2557) example:take_picture: Wi-Fi initialized, connecting to SSID: TP-Link_2A33[0m
+D (2557) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2577) esp_netif_handlers: esp_netif action has started with netif0x3fcb36ac from event_id=2[0m
+D (2577) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018694[0m
+D (2587) esp_netif_lwip: esp_netif_start_api 0x3fcb36ac[0m
+D (2587) esp_netif_lwip: check: remote, if=0x3fca7ab0 fn=0x42017dbc[0m
+D (2597) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcb36ac[0m
+D (2607) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (2607) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (2617) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+D (2627) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2627) event: running post WIFI_EVENT:2 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (2637) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (2647) wifi:Start wifi connect
+D (2647) wifi:connect status 0 -> 0
+D (2647) wifi:connect chan=0
+D (2657) wifi:first chan=7
+D (2657) wifi:connect status 0 -> 1
+D (2657) wifi:filter: set rx policy=3
+D (2667) wifi:clear scan ap list
+D (2667) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=2686212, index=0
+V (2677) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (2677) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (2687) wifi:change: chan<7,0>, dur<0,120>
+V (2687) wifi:ht20 freq=2442, chan=7
+V (2697) wifi:enter start op, arg=0x3fca119a
+V (2697) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (2707) wifi:scan specific ssid=TP-Link_2A33
+V (2707) wifi:start max timer
+D (2717) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2717) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3fcb36ac[0m
+[0;32mI (2727) example:take_picture: IP Address: 0.0.0.0[0m
+[0;32mI (2727) example:take_picture: Netmask: 0.0.0.0[0m
+[0;32mI (2737) example:take_picture: Gateway: 0.0.0.0[0m
+D (2737) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018b74[0m
+D (2747) esp_netif_lwip: esp_netif_get_dns_info: esp_netif=0x3fcb36ac type=0[0m
+D (2757) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (2757) example:take_picture: DNS Server: 0.0.0.0[0m
+[0;32mI (2767) main_task: Returned from app_main()[0m
+[0;32mI (2767) example:take_picture: Initializing camera...[0m
+D (2777) gdma: new group (0) at 0x3c0f0c64[0m
+D (2777) gdma: new pair (0,0) at 0x3c0f0cf0[0m
+D (2787) gdma: new rx channel (0,0) at 0x3c0f0c24[0m
+[0;32mI (2787) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (2787) cam_hal: cam init ok[0m
+D (2797) camera: Enabling XCLK output[0m
+D (2797) camera: Initializing SCCB[0m
+[0;32mI (2807) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (2807) sccb: sccb_i2c_port=1[0m
+V (2807) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (2817) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0xE[0m
+D (2827) intr_alloc: Connected src 43 to int 4 (cpu 1)[0m
+D (2827) camera: Searching for camera address[0m
+D (2827) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (2837) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (2847) wifi:change: chan<1,0>, dur<0,120>
+[0;32mI (2847) camera: Detected camera at address=0x30[0m
+V (2847) wifi:ht20 freq=2412, chan=1
+[0;32mI (2857) camera: Detected OV2640 camera[0m
+V (2857) wifi:enter start op, arg=0x3fca119a
+D (2867) ov2640: OV2640 Attached[0m
+V (2867) wifi:[0;32mI (2867) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0D (2877) camera: Doing SW reset of sensor[0m
+
+V (2887) wifi:scan specific ssid=TP-Link_2A33
+V (2887) wifi:start max timer
+[0;32mI (2977) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 12[0m
+[0;32mI (2977) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer:  7680, lines_per_half_buffer: 24, dma_buffer_size: 15360[0m
+[0;32mI (2977) cam_hal: buffer_size: 15360, half_buffer_size: 7680, node_buffer_size: 3840, node_cnt: 4, total_cnt: 5[0m
+[0;32mI (2997) cam_hal: Allocating 38400 Byte frame buffer in PSRAM[0m
+[0;32mI (2997) cam_hal: Allocating 38400 Byte frame buffer in PSRAM[0m
+V (3007) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (3007) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (3017) intr_alloc: Connected src 66 to int 9 (cpu 1)[0m
+V (3027) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (3027) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (3037) intr_alloc: Connected src 24 to int 9 (cpu 1)[0m
+D (3017) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+[0;32mI (3047) cam_hal: cam config ok[0m
+D (3047) wifi:D (3057) camera: Setting frame size to 160x120[0m
+perform scan: ss_state=0x9, chan<2,0>, dur<0,120>[0;32mI (3057) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+
+V (3067) wifi:change: chan<2,0>, dur<0,120>
+V (3077) wifi:ht20 freq=2417, chan=2
+V (3077) wifi:enter start op, arg=0x3fca119a
+V (3087) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (3087) wifi:scan specific ssid=TP-Link_2A33
+V (3097) wifi:start max timer
+[0;32mI (3147) example:take_picture: Taking picture...[0m
+D (3217) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3217) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (3217) wifi:change: chan<3,0>, dur<0,120>
+V (3217) wifi:ht20 freq=2422, chan=3
+V (3227) wifi:enter start op, arg=0x3fca119a
+V (3227) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (3237) wifi:scan specific ssid=TP-Link_2A33
+V (3237) wifi:start max timer
+[0;32mI (3277) example:take_picture: Picture taken! Its size was: 38400 bytes[0m
+[0;32mI (3277) example:take_picture: Uploading image to Cloudinary...[0m
+D (3277) HTTP_CLIENT: set post file length = 38432[0m
+D (3287) HTTP_CLIENT: Begin connect to: https://api.cloudinary.com:443[0m
+D (3287) esp-tls: host:api.cloudinary.com: strlen 18[0m
+[0;31mE (3297) esp-tls: couldn't get hostname for :api.cloudinary.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3307) esp-tls: Failed to open new connection[0m
+[0;31mE (3307) transport_base: Failed to open a new connection[0m
+[0;31mE (3317) HTTP_CLIENT: Connection failed, sock < 0[0m
+D (3317) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:0 posted to loop 0x3fcb2770[0m
+[0;31mE (3317) example:take_picture: Image upload to Cloudinary failed: ESP_ERR_HTTP_CONNECT[0m
+D (3337) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3fcb2770[0m
+[0;32mI (3337) example:take_picture: Stopping program after successful image upload.[0m
+D (3357) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3357) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (3367) wifi:change: chan<4,0>, dur<0,120>
+V (3367) wifi:ht20 freq=2427, chan=4
+V (3377) wifi:enter start op, arg=0x3fca119a
+V (3377) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (3387) wifi:scan specific ssid=TP-Link_2A33
+V (3387) wifi:start max timer
+D (3507) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3517) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (3517) wifi:change: chan<5,0>, dur<0,120>
+V (3517) wifi:ht20 freq=2432, chan=5
+V (3517) wifi:enter start op, arg=0x3fca119a
+V (3527) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (3527) wifi:scan specific ssid=TP-Link_2A33
+V (3537) wifi:start max timer
+D (3657) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3657) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (3657) wifi:change: chan<6,0>, dur<0,120>
+V (3657) wifi:ht20 freq=2437, chan=6
+V (3667) wifi:enter start op, arg=0x3fca119a
+V (3667) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (3677) wifi:scan specific ssid=TP-Link_2A33
+V (3677) wifi:start max timer
+D (3797) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3797) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (3807) wifi:change: chan<8,0>, dur<0,120>
+V (3807) wifi:ht20 freq=2447, chan=8
+V (3807) wifi:enter start op, arg=0x3fca119a
+V (3817) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (3817) wifi:scan specific ssid=TP-Link_2A33
+V (3827) wifi:start max timer
+D (3947) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (3947) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (3947) wifi:change: chan<9,0>, dur<0,120>
+V (3947) wifi:ht20 freq=2452, chan=9
+V (3957) wifi:enter start op, arg=0x3fca119a
+V (3957) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (3967) wifi:scan specific ssid=TP-Link_2A33
+V (3967) wifi:start max timer
+D (4087) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (4087) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (4097) wifi:change: chan<10,0>, dur<0,120>
+V (4097) wifi:ht20 freq=2457, chan=10
+V (4097) wifi:enter start op, arg=0x3fca119a
+V (4107) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (4107) wifi:scan specific ssid=TP-Link_2A33
+V (4117) wifi:start max timer
+D (4237) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (4237) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (4237) wifi:change: chan<11,0>, dur<0,120>
+V (4237) wifi:ht20 freq=2462, chan=11
+V (4247) wifi:enter start op, arg=0x3fca119a
+V (4247) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (4257) wifi:scan specific ssid=TP-Link_2A33
+V (4257) wifi:start max timer
+D (4377) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (4377) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (4377) wifi:change: chan<12,0>, dur<360,360>
+V (4387) wifi:ht20 freq=2467, chan=12
+V (4387) wifi:enter start op, arg=0x3fca119a
+V (4397) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (4397) wifi:passive scan, listen only
+V (4407) wifi:start max timer
+D (4767) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (4767) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (4767) wifi:change: chan<13,0>, dur<360,360>
+V (4767) wifi:ht20 freq=2472, chan=13
+V (4777) wifi:enter start op, arg=0x3fca119a
+V (4777) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (4787) wifi:passive scan, listen only
+V (4787) wifi:start max timer
+D (5147) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (5147) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (5147) wifi:change: chan<14,0>, dur<360,360>
+V (5157) wifi:ht20 freq=2484, chan=14
+V (5157) wifi:enter start op, arg=0x3fca119a
+V (5167) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (5167) wifi:passive scan, listen only
+V (5177) wifi:start max timer
+D (5537) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (5537) wifi:back home chan=<1,0>, current chan=<14,0>
+V (5537) wifi:ht20 freq=2412, chan=1
+D (5537) wifi:filter: set rx policy=4
+D (5537) wifi:first chan=1
+V (5547) wifi:scan_done: arg=0x0, status=0, cur_time=5563459, scan_id=128, scan state=0
+V (5547) wifi:call scan_done cb, arg=0x0
+D (5557) wifi:handoff_cb: status=0
+D (5557) wifi:clear rc list
+D (5557) wifi:clear blacklist
+D (5567) wifi:Send disconnect event, reason=201
+D (5567) wifi:connect status 1 -> 3
+D (5567) wifi:disable connect timer
+D (5577) wifi:clear scan ap list
+D (5577) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (5587) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (5597) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (5597) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (5607) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (5617) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: interval=120[0m
+D (5617) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (5627) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (5637) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (5637) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (5647) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (5647) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (5657) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (5667) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (5677) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (5677) wifi:Start wifi connect
+D (5687) wifi:connect status 3 -> 0
+D (5687) wifi:connect chan=0
+D (5687) wifi:first chan=7
+D (5687) wifi:connect status 0 -> 1
+D (5697) wifi:filter: set rx policy=3
+D (5697) wifi:clear scan ap list
+D (5697) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=5720059, index=0
+V (5707) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (5717) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (5717) wifi:change: chan<7,0>, dur<0,120>
+V (5727) wifi:ht20 freq=2442, chan=7
+V (5727) wifi:enter start op, arg=0x3fca119a
+V (5727) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (5737) wifi:scan specific ssid=TP-Link_2A33
+V (5747) wifi:start max timer
+D (5867) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (5867) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (5867) wifi:change: chan<1,0>, dur<0,120>
+V (5867) wifi:ht20 freq=2412, chan=1
+V (5877) wifi:enter start op, arg=0x3fca119a
+V (5877) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (5887) wifi:scan specific ssid=TP-Link_2A33
+V (5887) wifi:start max timer
+D (6007) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6007) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (6007) wifi:change: chan<2,0>, dur<0,120>
+V (6017) wifi:ht20 freq=2417, chan=2
+V (6017) wifi:enter start op, arg=0x3fca119a
+V (6017) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (6027) wifi:scan specific ssid=TP-Link_2A33
+V (6037) wifi:start max timer
+D (6157) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6157) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (6157) wifi:change: chan<3,0>, dur<0,120>
+V (6157) wifi:ht20 freq=2422, chan=3
+V (6167) wifi:enter start op, arg=0x3fca119a
+V (6167) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (6177) wifi:scan specific ssid=TP-Link_2A33
+V (6177) wifi:start max timer
+D (6297) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6297) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (6297) wifi:change: chan<4,0>, dur<0,120>
+V (6307) wifi:ht20 freq=2427, chan=4
+V (6307) wifi:enter start op, arg=0x3fca119a
+V (6307) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (6317) wifi:scan specific ssid=TP-Link_2A33
+V (6317) wifi:start max timer
+D (6447) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6447) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (6447) wifi:change: chan<5,0>, dur<0,120>
+V (6447) wifi:ht20 freq=2432, chan=5
+V (6447) wifi:enter start op, arg=0x3fca119a
+V (6457) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (6467) wifi:scan specific ssid=TP-Link_2A33
+V (6467) wifi:start max timer
+D (6587) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6587) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (6587) wifi:change: chan<6,0>, dur<0,120>
+V (6597) wifi:ht20 freq=2437, chan=6
+V (6597) wifi:enter start op, arg=0x3fca119a
+V (6597) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (6607) wifi:scan specific ssid=TP-Link_2A33
+V (6607) wifi:start max timer
+D (6737) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6737) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (6737) wifi:change: chan<8,0>, dur<0,120>
+V (6737) wifi:ht20 freq=2447, chan=8
+V (6737) wifi:enter start op, arg=0x3fca119a
+V (6747) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (6747) wifi:scan specific ssid=TP-Link_2A33
+V (6757) wifi:start max timer
+D (6877) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (6877) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (6877) wifi:change: chan<9,0>, dur<0,120>
+V (6887) wifi:ht20 freq=2452, chan=9
+V (6887) wifi:enter start op, arg=0x3fca119a
+V (6887) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (6897) wifi:scan specific ssid=TP-Link_2A33
+V (6897) wifi:start max timer
+D (7027) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (7027) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (7027) wifi:change: chan<10,0>, dur<0,120>
+V (7027) wifi:ht20 freq=2457, chan=10
+V (7027) wifi:enter start op, arg=0x3fca119a
+V (7037) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (7037) wifi:scan specific ssid=TP-Link_2A33
+V (7047) wifi:start max timer
+D (7167) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (7167) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (7167) wifi:change: chan<11,0>, dur<0,120>
+V (7177) wifi:ht20 freq=2462, chan=11
+V (7177) wifi:enter start op, arg=0x3fca119a
+V (7177) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (7187) wifi:scan specific ssid=TP-Link_2A33
+V (7187) wifi:start max timer
+D (7317) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (7317) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (7317) wifi:change: chan<12,0>, dur<360,360>
+V (7317) wifi:ht20 freq=2467, chan=12
+V (7317) wifi:enter start op, arg=0x3fca119a
+V (7327) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (7327) wifi:passive scan, listen only
+V (7337) wifi:start max timer
+D (7697) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (7697) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (7697) wifi:change: chan<13,0>, dur<360,360>
+V (7707) wifi:ht20 freq=2472, chan=13
+V (7707) wifi:enter start op, arg=0x3fca119a
+V (7707) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (7717) wifi:passive scan, listen only
+V (7717) wifi:start max timer
+D (8087) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (8087) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (8087) wifi:change: chan<14,0>, dur<360,360>
+V (8087) wifi:ht20 freq=2484, chan=14
+V (8087) wifi:enter start op, arg=0x3fca119a
+V (8097) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (8097) wifi:passive scan, listen only
+V (8107) wifi:start max timer
+D (8467) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (8467) wifi:back home chan=<1,0>, current chan=<14,0>
+V (8467) wifi:ht20 freq=2412, chan=1
+D (8467) wifi:filter: set rx policy=4
+D (8477) wifi:first chan=1
+V (8477) wifi:scan_done: arg=0x0, status=0, cur_time=8495700, scan_id=128, scan state=0
+V (8487) wifi:call scan_done cb, arg=0x0
+D (8487) wifi:handoff_cb: status=0
+D (8487) wifi:clear rc list
+D (8497) wifi:clear blacklist
+D (8497) wifi:Send disconnect event, reason=201
+D (8497) wifi:connect status 1 -> 3
+D (8507) wifi:disable connect timer
+D (8507) wifi:clear scan ap list
+D (8507) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (8517) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (8527) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (8537) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (8537) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (8547) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (8557) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (8557) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (8567) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (8567) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (8577) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (8587) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (8587) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (8597) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (8607) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (8617) wifi:Start wifi connect
+D (8617) wifi:connect status 3 -> 0
+D (8617) wifi:connect chan=0
+D (8617) wifi:first chan=7
+D (8627) wifi:connect status 0 -> 1
+D (8627) wifi:filter: set rx policy=3
+D (8627) wifi:clear scan ap list
+D (8637) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=8652553, index=0
+V (8647) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (8647) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (8657) wifi:change: chan<7,0>, dur<0,120>
+V (8657) wifi:ht20 freq=2442, chan=7
+V (8657) wifi:enter start op, arg=0x3fca119a
+V (8667) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (8667) wifi:scan specific ssid=TP-Link_2A33
+V (8677) wifi:start max timer
+D (8797) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (8797) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (8797) wifi:change: chan<1,0>, dur<0,120>
+V (8797) wifi:ht20 freq=2412, chan=1
+V (8807) wifi:enter start op, arg=0x3fca119a
+V (8807) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (8817) wifi:scan specific ssid=TP-Link_2A33
+V (8817) wifi:start max timer
+D (8947) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (8947) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (8947) wifi:change: chan<2,0>, dur<0,120>
+V (8947) wifi:ht20 freq=2417, chan=2
+V (8947) wifi:enter start op, arg=0x3fca119a
+V (8957) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (8957) wifi:scan specific ssid=TP-Link_2A33
+V (8967) wifi:start max timer
+D (9087) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9087) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (9087) wifi:change: chan<3,0>, dur<0,120>
+V (9087) wifi:ht20 freq=2422, chan=3
+V (9097) wifi:enter start op, arg=0x3fca119a
+V (9097) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (9107) wifi:scan specific ssid=TP-Link_2A33
+V (9107) wifi:start max timer
+D (9227) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9237) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (9237) wifi:change: chan<4,0>, dur<0,120>
+V (9237) wifi:ht20 freq=2427, chan=4
+V (9237) wifi:enter start op, arg=0x3fca119a
+V (9247) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (9247) wifi:scan specific ssid=TP-Link_2A33
+V (9257) wifi:start max timer
+D (9377) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9377) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (9377) wifi:change: chan<5,0>, dur<0,120>
+V (9377) wifi:ht20 freq=2432, chan=5
+V (9387) wifi:enter start op, arg=0x3fca119a
+V (9387) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (9397) wifi:scan specific ssid=TP-Link_2A33
+V (9397) wifi:start max timer
+D (9517) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9517) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (9527) wifi:change: chan<6,0>, dur<0,120>
+V (9527) wifi:ht20 freq=2437, chan=6
+V (9527) wifi:enter start op, arg=0x3fca119a
+V (9537) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (9537) wifi:scan specific ssid=TP-Link_2A33
+V (9547) wifi:start max timer
+D (9667) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9667) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (9667) wifi:change: chan<8,0>, dur<0,120>
+V (9667) wifi:ht20 freq=2447, chan=8
+V (9677) wifi:enter start op, arg=0x3fca119a
+V (9677) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (9687) wifi:scan specific ssid=TP-Link_2A33
+V (9687) wifi:start max timer
+D (9807) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9807) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (9807) wifi:change: chan<9,0>, dur<0,120>
+V (9817) wifi:ht20 freq=2452, chan=9
+V (9817) wifi:enter start op, arg=0x3fca119a
+V (9817) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (9827) wifi:scan specific ssid=TP-Link_2A33
+V (9837) wifi:start max timer
+D (9957) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (9957) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (9957) wifi:change: chan<10,0>, dur<0,120>
+V (9957) wifi:ht20 freq=2457, chan=10
+V (9967) wifi:enter start op, arg=0x3fca119a
+V (9967) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (9977) wifi:scan specific ssid=TP-Link_2A33
+V (9977) wifi:start max timer
+D (10097) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (10097) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (10097) wifi:change: chan<11,0>, dur<0,120>
+V (10107) wifi:ht20 freq=2462, chan=11
+V (10107) wifi:enter start op, arg=0x3fca119a
+V (10117) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (10117) wifi:scan specific ssid=TP-Link_2A33
+V (10127) wifi:start max timer
+D (10247) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (10247) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (10247) wifi:change: chan<12,0>, dur<360,360>
+V (10247) wifi:ht20 freq=2467, chan=12
+V (10257) wifi:enter start op, arg=0x3fca119a
+V (10257) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (10267) wifi:passive scan, listen only
+V (10267) wifi:start max timer
+D (10627) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (10637) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (10637) wifi:change: chan<13,0>, dur<360,360>
+V (10637) wifi:ht20 freq=2472, chan=13
+V (10637) wifi:enter start op, arg=0x3fca119a
+V (10647) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (10647) wifi:passive scan, listen only
+V (10657) wifi:start max timer
+D (11017) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (11017) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (11017) wifi:change: chan<14,0>, dur<360,360>
+V (11017) wifi:ht20 freq=2484, chan=14
+V (11027) wifi:enter start op, arg=0x3fca119a
+V (11027) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (11037) wifi:passive scan, listen only
+V (11037) wifi:start max timer
+D (11407) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (11407) wifi:back home chan=<1,0>, current chan=<14,0>
+V (11407) wifi:ht20 freq=2412, chan=1
+D (11407) wifi:filter: set rx policy=4
+D (11407) wifi:first chan=1
+V (11407) wifi:scan_done: arg=0x0, status=0, cur_time=11431499, scan_id=128, scan state=0
+V (11417) wifi:call scan_done cb, arg=0x0
+D (11427) wifi:handoff_cb: status=0
+D (11427) wifi:clear rc list
+D (11427) wifi:clear blacklist
+D (11427) wifi:Send disconnect event, reason=201
+D (11437) wifi:connect status 1 -> 3
+D (11437) wifi:disable connect timer
+D (11447) wifi:clear scan ap list
+D (11447) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (11457) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (11467) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (11467) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (11477) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (11487) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (11487) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (11497) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (11507) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (11507) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (11517) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (11517) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (11527) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (11537) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (11547) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (11547) wifi:Start wifi connect
+D (11557) wifi:connect status 3 -> 0
+D (11557) wifi:connect chan=0
+D (11557) wifi:first chan=7
+D (11557) wifi:connect status 0 -> 1
+D (11567) wifi:filter: set rx policy=3
+D (11567) wifi:clear scan ap list
+D (11567) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=11591131, index=0
+V (11577) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (11587) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (11597) wifi:change: chan<7,0>, dur<0,120>
+V (11597) wifi:ht20 freq=2442, chan=7
+V (11597) wifi:enter start op, arg=0x3fca119a
+V (11607) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (11607) wifi:scan specific ssid=TP-Link_2A33
+V (11617) wifi:start max timer
+D (11737) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (11737) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (11737) wifi:change: chan<1,0>, dur<0,120>
+V (11737) wifi:ht20 freq=2412, chan=1
+V (11747) wifi:enter start op, arg=0x3fca119a
+V (11747) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (11757) wifi:scan specific ssid=TP-Link_2A33
+V (11757) wifi:start max timer
+D (11887) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (11887) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (11887) wifi:change: chan<2,0>, dur<0,120>
+V (11887) wifi:ht20 freq=2417, chan=2
+V (11887) wifi:enter start op, arg=0x3fca119a
+V (11897) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (11897) wifi:scan specific ssid=TP-Link_2A33
+V (11907) wifi:start max timer
+D (12027) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12027) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (12027) wifi:change: chan<3,0>, dur<0,120>
+V (12037) wifi:ht20 freq=2422, chan=3
+V (12037) wifi:enter start op, arg=0x3fca119a
+V (12037) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (12047) wifi:scan specific ssid=TP-Link_2A33
+V (12047) wifi:start max timer
+D (12177) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12177) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (12177) wifi:change: chan<4,0>, dur<0,120>
+V (12177) wifi:ht20 freq=2427, chan=4
+V (12177) wifi:enter start op, arg=0x3fca119a
+V (12187) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (12187) wifi:scan specific ssid=TP-Link_2A33
+V (12197) wifi:start max timer
+D (12317) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12317) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (12317) wifi:change: chan<5,0>, dur<0,120>
+V (12327) wifi:ht20 freq=2432, chan=5
+V (12327) wifi:enter start op, arg=0x3fca119a
+V (12327) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (12337) wifi:scan specific ssid=TP-Link_2A33
+V (12337) wifi:start max timer
+D (12467) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12467) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (12467) wifi:change: chan<6,0>, dur<0,120>
+V (12467) wifi:ht20 freq=2437, chan=6
+V (12467) wifi:enter start op, arg=0x3fca119a
+V (12477) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (12487) wifi:scan specific ssid=TP-Link_2A33
+V (12487) wifi:start max timer
+D (12607) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12607) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (12607) wifi:change: chan<8,0>, dur<0,120>
+V (12617) wifi:ht20 freq=2447, chan=8
+V (12617) wifi:enter start op, arg=0x3fca119a
+V (12617) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (12627) wifi:scan specific ssid=TP-Link_2A33
+V (12637) wifi:start max timer
+D (12757) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12757) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (12757) wifi:change: chan<9,0>, dur<0,120>
+V (12757) wifi:ht20 freq=2452, chan=9
+V (12767) wifi:enter start op, arg=0x3fca119a
+V (12767) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (12777) wifi:scan specific ssid=TP-Link_2A33
+V (12777) wifi:start max timer
+D (12897) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (12897) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (12897) wifi:change: chan<10,0>, dur<0,120>
+V (12907) wifi:ht20 freq=2457, chan=10
+V (12907) wifi:enter start op, arg=0x3fca119a
+V (12917) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (12917) wifi:scan specific ssid=TP-Link_2A33
+V (12927) wifi:start max timer
+D (13047) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (13047) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (13047) wifi:change: chan<11,0>, dur<0,120>
+V (13047) wifi:ht20 freq=2462, chan=11
+V (13057) wifi:enter start op, arg=0x3fca119a
+V (13057) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (13067) wifi:scan specific ssid=TP-Link_2A33
+V (13067) wifi:start max timer
+D (13187) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (13197) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (13197) wifi:change: chan<12,0>, dur<360,360>
+V (13197) wifi:ht20 freq=2467, chan=12
+V (13197) wifi:enter start op, arg=0x3fca119a
+V (13207) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (13207) wifi:passive scan, listen only
+V (13217) wifi:start max timer
+D (13577) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (13577) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (13577) wifi:change: chan<13,0>, dur<360,360>
+V (13577) wifi:ht20 freq=2472, chan=13
+V (13587) wifi:enter start op, arg=0x3fca119a
+V (13587) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (13597) wifi:passive scan, listen only
+V (13597) wifi:start max timer
+D (13967) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (13967) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (13967) wifi:change: chan<14,0>, dur<360,360>
+V (13967) wifi:ht20 freq=2484, chan=14
+V (13967) wifi:enter start op, arg=0x3fca119a
+V (13977) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (13987) wifi:passive scan, listen only
+V (13987) wifi:start max timer
+D (14347) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (14347) wifi:back home chan=<1,0>, current chan=<14,0>
+V (14347) wifi:ht20 freq=2412, chan=1
+D (14347) wifi:filter: set rx policy=4
+D (14357) wifi:first chan=1
+V (14357) wifi:scan_done: arg=0x0, status=0, cur_time=14377005, scan_id=128, scan state=0
+V (14367) wifi:call scan_done cb, arg=0x0
+D (14367) wifi:handoff_cb: status=0
+D (14367) wifi:clear rc list
+D (14377) wifi:clear blacklist
+D (14377) wifi:Send disconnect event, reason=201
+D (14377) wifi:connect status 1 -> 3
+D (14387) wifi:disable connect timer
+D (14387) wifi:clear scan ap list
+D (14387) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (14397) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (14407) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (14417) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (14427) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (14427) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (14437) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (14447) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (14447) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (14457) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (14457) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (14467) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (14477) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (14487) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (14487) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (14497) wifi:Start wifi connect
+D (14497) wifi:connect status 3 -> 0
+D (14497) wifi:connect chan=0
+D (14507) wifi:first chan=7
+D (14507) wifi:connect status 0 -> 1
+D (14507) wifi:filter: set rx policy=3
+D (14517) wifi:clear scan ap list
+D (14517) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=14536639, index=0
+V (14527) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (14527) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (14537) wifi:change: chan<7,0>, dur<0,120>
+V (14537) wifi:ht20 freq=2442, chan=7
+V (14547) wifi:enter start op, arg=0x3fca119a
+V (14547) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (14557) wifi:scan specific ssid=TP-Link_2A33
+V (14557) wifi:start max timer
+D (14687) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (14687) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (14687) wifi:change: chan<1,0>, dur<0,120>
+V (14687) wifi:ht20 freq=2412, chan=1
+V (14687) wifi:enter start op, arg=0x3fca119a
+V (14697) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (14697) wifi:scan specific ssid=TP-Link_2A33
+V (14707) wifi:start max timer
+D (14827) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (14827) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (14827) wifi:change: chan<2,0>, dur<0,120>
+V (14837) wifi:ht20 freq=2417, chan=2
+V (14837) wifi:enter start op, arg=0x3fca119a
+V (14837) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (14847) wifi:scan specific ssid=TP-Link_2A33
+V (14847) wifi:start max timer
+D (14977) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (14977) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (14977) wifi:change: chan<3,0>, dur<0,120>
+V (14977) wifi:ht20 freq=2422, chan=3
+V (14977) wifi:enter start op, arg=0x3fca119a
+V (14987) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (14997) wifi:scan specific ssid=TP-Link_2A33
+V (14997) wifi:start max timer
+D (15117) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15117) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (15117) wifi:change: chan<4,0>, dur<0,120>
+V (15127) wifi:ht20 freq=2427, chan=4
+V (15127) wifi:enter start op, arg=0x3fca119a
+V (15127) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (15137) wifi:scan specific ssid=TP-Link_2A33
+V (15137) wifi:start max timer
+D (15267) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15267) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (15267) wifi:change: chan<5,0>, dur<0,120>
+V (15267) wifi:ht20 freq=2432, chan=5
+V (15277) wifi:enter start op, arg=0x3fca119a
+V (15277) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (15287) wifi:scan specific ssid=TP-Link_2A33
+V (15287) wifi:start max timer
+D (15407) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15407) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (15407) wifi:change: chan<6,0>, dur<0,120>
+V (15417) wifi:ht20 freq=2437, chan=6
+V (15417) wifi:enter start op, arg=0x3fca119a
+V (15417) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (15427) wifi:scan specific ssid=TP-Link_2A33
+V (15437) wifi:start max timer
+D (15557) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15557) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (15557) wifi:change: chan<8,0>, dur<0,120>
+V (15557) wifi:ht20 freq=2447, chan=8
+V (15567) wifi:enter start op, arg=0x3fca119a
+V (15567) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (15577) wifi:scan specific ssid=TP-Link_2A33
+V (15577) wifi:start max timer
+D (15697) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15697) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (15697) wifi:change: chan<9,0>, dur<0,120>
+V (15707) wifi:ht20 freq=2452, chan=9
+V (15707) wifi:enter start op, arg=0x3fca119a
+V (15717) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (15717) wifi:scan specific ssid=TP-Link_2A33
+V (15727) wifi:start max timer
+D (15847) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15847) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (15847) wifi:change: chan<10,0>, dur<0,120>
+V (15847) wifi:ht20 freq=2457, chan=10
+V (15857) wifi:enter start op, arg=0x3fca119a
+V (15857) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (15867) wifi:scan specific ssid=TP-Link_2A33
+V (15867) wifi:start max timer
+D (15987) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (15997) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (15997) wifi:change: chan<11,0>, dur<0,120>
+V (15997) wifi:ht20 freq=2462, chan=11
+V (15997) wifi:enter start op, arg=0x3fca119a
+V (16007) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (16007) wifi:scan specific ssid=TP-Link_2A33
+V (16017) wifi:start max timer
+D (16137) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (16137) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (16137) wifi:change: chan<12,0>, dur<360,360>
+V (16137) wifi:ht20 freq=2467, chan=12
+V (16147) wifi:enter start op, arg=0x3fca119a
+V (16147) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (16157) wifi:passive scan, listen only
+V (16157) wifi:start max timer
+D (16527) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (16527) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (16527) wifi:change: chan<13,0>, dur<360,360>
+V (16527) wifi:ht20 freq=2472, chan=13
+V (16527) wifi:enter start op, arg=0x3fca119a
+V (16537) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (16547) wifi:passive scan, listen only
+V (16547) wifi:start max timer
+D (16907) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (16907) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (16907) wifi:change: chan<14,0>, dur<360,360>
+V (16917) wifi:ht20 freq=2484, chan=14
+V (16917) wifi:enter start op, arg=0x3fca119a
+V (16917) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (16927) wifi:passive scan, listen only
+V (16927) wifi:start max timer
+D (17297) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (17297) wifi:back home chan=<1,0>, current chan=<14,0>
+V (17297) wifi:ht20 freq=2412, chan=1
+D (17297) wifi:filter: set rx policy=4
+D (17297) wifi:first chan=1
+V (17307) wifi:scan_done: arg=0x0, status=0, cur_time=17322419, scan_id=128, scan state=0
+V (17307) wifi:call scan_done cb, arg=0x0
+D (17317) wifi:handoff_cb: status=0
+D (17317) wifi:clear rc list
+D (17317) wifi:clear blacklist
+D (17327) wifi:Send disconnect event, reason=201
+D (17327) wifi:connect status 1 -> 3
+D (17327) wifi:disable connect timer
+D (17337) wifi:clear scan ap list
+D (17337) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (17347) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (17357) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (17357) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (17367) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (17377) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (17387) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (17387) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (17397) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (17397) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (17407) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (17417) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (17417) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (17427) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (17437) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (17437) wifi:Start wifi connect
+D (17447) wifi:connect status 3 -> 0
+D (17447) wifi:connect chan=0
+D (17447) wifi:first chan=7
+D (17457) wifi:connect status 0 -> 1
+D (17457) wifi:filter: set rx policy=3
+D (17457) wifi:clear scan ap list
+D (17457) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=17482049, index=0
+V (17467) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (17477) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (17487) wifi:change: chan<7,0>, dur<0,120>
+V (17487) wifi:ht20 freq=2442, chan=7
+V (17487) wifi:enter start op, arg=0x3fca119a
+V (17497) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (17497) wifi:scan specific ssid=TP-Link_2A33
+V (17507) wifi:start max timer
+D (17627) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (17627) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (17627) wifi:change: chan<1,0>, dur<0,120>
+V (17637) wifi:ht20 freq=2412, chan=1
+V (17637) wifi:enter start op, arg=0x3fca119a
+V (17637) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (17647) wifi:scan specific ssid=TP-Link_2A33
+V (17647) wifi:start max timer
+D (17777) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (17777) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (17777) wifi:change: chan<2,0>, dur<0,120>
+V (17777) wifi:ht20 freq=2417, chan=2
+V (17777) wifi:enter start op, arg=0x3fca119a
+V (17787) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (17797) wifi:scan specific ssid=TP-Link_2A33
+V (17797) wifi:start max timer
+D (17917) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (17917) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (17917) wifi:change: chan<3,0>, dur<0,120>
+V (17927) wifi:ht20 freq=2422, chan=3
+V (17927) wifi:enter start op, arg=0x3fca119a
+V (17927) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (17937) wifi:scan specific ssid=TP-Link_2A33
+V (17937) wifi:start max timer
+D (18067) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18067) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (18067) wifi:change: chan<4,0>, dur<0,120>
+V (18067) wifi:ht20 freq=2427, chan=4
+V (18077) wifi:enter start op, arg=0x3fca119a
+V (18077) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (18087) wifi:scan specific ssid=TP-Link_2A33
+V (18087) wifi:start max timer
+D (18207) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18207) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (18207) wifi:change: chan<5,0>, dur<0,120>
+V (18217) wifi:ht20 freq=2432, chan=5
+V (18217) wifi:enter start op, arg=0x3fca119a
+V (18217) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (18227) wifi:scan specific ssid=TP-Link_2A33
+V (18237) wifi:start max timer
+D (18357) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18357) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (18357) wifi:change: chan<6,0>, dur<0,120>
+V (18357) wifi:ht20 freq=2437, chan=6
+V (18367) wifi:enter start op, arg=0x3fca119a
+V (18367) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (18377) wifi:scan specific ssid=TP-Link_2A33
+V (18377) wifi:start max timer
+D (18497) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18497) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (18497) wifi:change: chan<8,0>, dur<0,120>
+V (18507) wifi:ht20 freq=2447, chan=8
+V (18507) wifi:enter start op, arg=0x3fca119a
+V (18517) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (18517) wifi:scan specific ssid=TP-Link_2A33
+V (18527) wifi:start max timer
+D (18647) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18647) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (18647) wifi:change: chan<9,0>, dur<0,120>
+V (18647) wifi:ht20 freq=2452, chan=9
+V (18657) wifi:enter start op, arg=0x3fca119a
+V (18657) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (18667) wifi:scan specific ssid=TP-Link_2A33
+V (18667) wifi:start max timer
+D (18787) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18787) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (18797) wifi:change: chan<10,0>, dur<0,120>
+V (18797) wifi:ht20 freq=2457, chan=10
+V (18797) wifi:enter start op, arg=0x3fca119a
+V (18807) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (18807) wifi:scan specific ssid=TP-Link_2A33
+V (18817) wifi:start max timer
+D (18937) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (18937) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (18937) wifi:change: chan<11,0>, dur<0,120>
+V (18937) wifi:ht20 freq=2462, chan=11
+V (18947) wifi:enter start op, arg=0x3fca119a
+V (18947) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (18957) wifi:scan specific ssid=TP-Link_2A33
+V (18957) wifi:start max timer
+D (19087) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (19087) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (19087) wifi:change: chan<12,0>, dur<360,360>
+V (19087) wifi:ht20 freq=2467, chan=12
+V (19087) wifi:enter start op, arg=0x3fca119a
+V (19097) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (19107) wifi:passive scan, listen only
+V (19107) wifi:start max timer
+D (19467) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (19467) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (19467) wifi:change: chan<13,0>, dur<360,360>
+V (19477) wifi:ht20 freq=2472, chan=13
+V (19477) wifi:enter start op, arg=0x3fca119a
+V (19477) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (19487) wifi:passive scan, listen only
+V (19487) wifi:start max timer
+D (19857) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (19857) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (19857) wifi:change: chan<14,0>, dur<360,360>
+V (19857) wifi:ht20 freq=2484, chan=14
+V (19857) wifi:enter start op, arg=0x3fca119a
+V (19867) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (19877) wifi:passive scan, listen only
+V (19877) wifi:start max timer
+D (20237) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (20237) wifi:back home chan=<1,0>, current chan=<14,0>
+V (20237) wifi:ht20 freq=2412, chan=1
+D (20247) wifi:filter: set rx policy=4
+D (20247) wifi:first chan=1
+V (20247) wifi:scan_done: arg=0x0, status=0, cur_time=20267811, scan_id=128, scan state=0
+V (20257) wifi:call scan_done cb, arg=0x0
+D (20257) wifi:handoff_cb: status=0
+D (20267) wifi:clear rc list
+D (20267) wifi:clear blacklist
+D (20267) wifi:Send disconnect event, reason=201
+D (20277) wifi:connect status 1 -> 3
+D (20277) wifi:disable connect timer
+D (20277) wifi:clear scan ap list
+D (20287) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (20297) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (20297) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (20307) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (20317) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (20317) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (20327) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (20337) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (20337) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (20347) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (20357) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (20357) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (20367) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (20377) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (20377) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (20387) wifi:Start wifi connect
+D (20387) wifi:connect status 3 -> 0
+D (20397) wifi:connect chan=0
+D (20397) wifi:first chan=7
+D (20397) wifi:connect status 0 -> 1
+D (20397) wifi:filter: set rx policy=3
+D (20407) wifi:clear scan ap list
+D (20407) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=20427443, index=0
+V (20417) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (20427) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (20427) wifi:change: chan<7,0>, dur<0,120>
+V (20437) wifi:ht20 freq=2442, chan=7
+V (20437) wifi:enter start op, arg=0x3fca119a
+V (20437) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (20447) wifi:scan specific ssid=TP-Link_2A33
+V (20447) wifi:start max timer
+D (20577) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (20577) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (20577) wifi:change: chan<1,0>, dur<0,120>
+V (20577) wifi:ht20 freq=2412, chan=1
+V (20577) wifi:enter start op, arg=0x3fca119a
+V (20587) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (20597) wifi:scan specific ssid=TP-Link_2A33
+V (20597) wifi:start max timer
+D (20717) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (20717) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (20717) wifi:change: chan<2,0>, dur<0,120>
+V (20727) wifi:ht20 freq=2417, chan=2
+V (20727) wifi:enter start op, arg=0x3fca119a
+V (20727) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (20737) wifi:scan specific ssid=TP-Link_2A33
+V (20737) wifi:start max timer
+D (20867) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (20867) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (20867) wifi:change: chan<3,0>, dur<0,120>
+V (20867) wifi:ht20 freq=2422, chan=3
+V (20877) wifi:enter start op, arg=0x3fca119a
+V (20877) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (20887) wifi:scan specific ssid=TP-Link_2A33
+V (20887) wifi:start max timer
+D (21007) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21007) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (21007) wifi:change: chan<4,0>, dur<0,120>
+V (21017) wifi:ht20 freq=2427, chan=4
+V (21017) wifi:enter start op, arg=0x3fca119a
+V (21017) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (21027) wifi:scan specific ssid=TP-Link_2A33
+V (21037) wifi:start max timer
+D (21157) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21157) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (21157) wifi:change: chan<5,0>, dur<0,120>
+V (21157) wifi:ht20 freq=2432, chan=5
+V (21167) wifi:enter start op, arg=0x3fca119a
+V (21167) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (21177) wifi:scan specific ssid=TP-Link_2A33
+V (21177) wifi:start max timer
+D (21297) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21297) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (21297) wifi:change: chan<6,0>, dur<0,120>
+V (21307) wifi:ht20 freq=2437, chan=6
+V (21307) wifi:enter start op, arg=0x3fca119a
+V (21317) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (21317) wifi:scan specific ssid=TP-Link_2A33
+V (21327) wifi:start max timer
+D (21447) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21447) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (21447) wifi:change: chan<8,0>, dur<0,120>
+V (21447) wifi:ht20 freq=2447, chan=8
+V (21457) wifi:enter start op, arg=0x3fca119a
+V (21457) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca119a, status=0
+V (21467) wifi:scan specific ssid=TP-Link_2A33
+V (21467) wifi:start max timer
+D (21587) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21587) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (21597) wifi:change: chan<9,0>, dur<0,120>
+V (21597) wifi:ht20 freq=2452, chan=9
+V (21597) wifi:enter start op, arg=0x3fca119a
+V (21607) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca119a, status=0
+V (21607) wifi:scan specific ssid=TP-Link_2A33
+V (21617) wifi:start max timer
+D (21737) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21737) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (21737) wifi:change: chan<10,0>, dur<0,120>
+V (21737) wifi:ht20 freq=2457, chan=10
+V (21747) wifi:enter start op, arg=0x3fca119a
+V (21747) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca119a, status=0
+V (21757) wifi:scan specific ssid=TP-Link_2A33
+V (21757) wifi:start max timer
+D (21887) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (21887) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (21887) wifi:change: chan<11,0>, dur<0,120>
+V (21887) wifi:ht20 freq=2462, chan=11
+V (21887) wifi:enter start op, arg=0x3fca119a
+V (21897) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca119a, status=0
+V (21897) wifi:scan specific ssid=TP-Link_2A33
+V (21907) wifi:start max timer
+D (22027) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (22027) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (22027) wifi:change: chan<12,0>, dur<360,360>
+V (22037) wifi:ht20 freq=2467, chan=12
+V (22037) wifi:enter start op, arg=0x3fca119a
+V (22037) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca119a, status=0
+V (22047) wifi:passive scan, listen only
+V (22047) wifi:start max timer
+D (22417) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (22417) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (22417) wifi:change: chan<13,0>, dur<360,360>
+V (22417) wifi:ht20 freq=2472, chan=13
+V (22427) wifi:enter start op, arg=0x3fca119a
+V (22427) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca119a, status=0
+V (22437) wifi:passive scan, listen only
+V (22437) wifi:start max timer
+D (22797) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (22797) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (22797) wifi:change: chan<14,0>, dur<360,360>
+V (22807) wifi:ht20 freq=2484, chan=14
+V (22807) wifi:enter start op, arg=0x3fca119a
+V (22807) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca119a, status=0
+V (22817) wifi:passive scan, listen only
+V (22817) wifi:start max timer
+D (23187) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+V (23187) wifi:back home chan=<1,0>, current chan=<14,0>
+V (23187) wifi:ht20 freq=2412, chan=1
+D (23187) wifi:filter: set rx policy=4
+D (23187) wifi:first chan=1
+V (23197) wifi:scan_done: arg=0x0, status=0, cur_time=23213329, scan_id=128, scan state=0
+V (23197) wifi:call scan_done cb, arg=0x0
+D (23207) wifi:handoff_cb: status=0
+D (23207) wifi:clear rc list
+D (23207) wifi:clear blacklist
+D (23217) wifi:Send disconnect event, reason=201
+D (23217) wifi:connect status 1 -> 3
+D (23217) wifi:disable connect timer
+D (23227) wifi:clear scan ap list
+D (23227) event: running post WIFI_EVENT:5 with handler 0x4201ab50 and context 0x3fcb3968 on loop 0x3fcb2770[0m
+D (23237) esp_netif_handlers: esp_netif action disconnected with netif0x3fcb36ac from event_id=5[0m
+D (23247) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018aa8[0m
+D (23257) esp_netif_lwip: esp_netif_down_api esp_netif:0x3fcb36ac[0m
+D (23257) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (23267) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (23277) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (23277) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (23287) esp_netif_objects: esp_netif_next_unsafe 0x0[0m
+V (23287) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+V (23297) esp_netif_objects: esp_netif_next_unsafe 0x3fcb36ac[0m
+D (23307) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (23307) event: running post WIFI_EVENT:5 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+[0;32mI (23317) example:take_picture: Disconnected from Wi-Fi, reconnecting...[0m
+V (23327) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (23327) wifi:Start wifi connect
+D (23337) wifi:connect status 3 -> 0
+D (23337) wifi:connect chan=0
+D (23337) wifi:first chan=7
+D (23347) wifi:connect status 0 -> 1
+D (23347) wifi:filter: set rx policy=3
+D (23347) wifi:clear scan ap list
+D (23357) wifi:start scan: type=0x50f, priority=2, cb=0x4204265c, arg=0x0, ss_state=0x1, time=23372964, index=0
+V (23367) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (23367) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (23377) wifi:change: chan<7,0>, dur<0,120>
+V (23377) wifi:ht20 freq=2442, chan=7
+V (23377) wifi:enter start op, arg=0x3fca119a
+V (23387) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca119a, status=0
+V (23397) wifi:scan specific ssid=TP-Link_2A33
+V (23397) wifi:start max timer
+D (23517) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (23517) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (23517) wifi:change: chan<1,0>, dur<0,120>
+V (23527) wifi:ht20 freq=2412, chan=1
+V (23527) wifi:enter start op, arg=0x3fca119a
+V (23527) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca119a, status=0
+V (23537) wifi:scan specific ssid=TP-Link_2A33
+V (23537) wifi:start max timer
+D (23667) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (23667) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (23667) wifi:change: chan<2,0>, dur<0,120>
+V (23667) wifi:ht20 freq=2417, chan=2
+V (23677) wifi:enter start op, arg=0x3fca119a
+V (23677) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca119a, status=0
+V (23687) wifi:scan specific ssid=TP-Link_2A33
+V (23687) wifi:start max timer
+D (23807) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (23807) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (23807) wifi:change: chan<3,0>, dur<0,120>
+V (23817) wifi:ht20 freq=2422, chan=3
+V (23817) wifi:enter start op, arg=0x3fca119a
+V (23817) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca119a, status=0
+V (23827) wifi:scan specific ssid=TP-Link_2A33
+V (23837) wifi:start max timer
+D (23957) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (23957) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (23957) wifi:change: chan<4,0>, dur<0,120>
+V (23957) wifi:ht20 freq=2427, chan=4
+V (23967) wifi:enter start op, arg=0x3fca119a
+V (23967) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca119a, status=0
+V (23977) wifi:scan specific ssid=TP-Link_2A33
+V (23977) wifi:start max timer
+D (24097) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (24097) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (24097) wifi:change: chan<5,0>, dur<0,120>
+V (24107) wifi:ht20 freq=2432, chan=5
+V (24107) wifi:enter start op, arg=0x3fca119a
+V (24117) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca119a, status=0
+V (24117) wifi:scan specific ssid=TP-Link_2A33
+V (24127) wifi:start max timer
+D (24247) wifi:scan end: arg=0x0, status=0, ss_state=0x3
+D (24247) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (24247) wifi:change: chan<6,0>, dur<0,120>
+V (24247) wifi:ht20 freq=2437, chan=6
+V (24257) wifi:enter start op, arg=0x3fca119a
+V (24257) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca119a, status=0
+V (24267) wifi:scan specific ssid=TP-Link_2A33
+V (24267) wifi:start max timer
+D (24267) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=34:e8:94:1b:2a:33
+V (24277) wifi:updated connection retries to 0
+V (24287) wifi:home channel=0, new channel=2
+D (24287) wifi:profile match: ss_state=0x7
+V (24287) wifi:scan histroy table is not full yet, add
+V (24297) wifi:add ssid=TP-Link_2A33, chan=6 to scan history
+D (24297) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=34:e8:94:1b:2a:33
+V (24307) wifi:home channel=0, new channel=2
+D (24307) wifi:profile match: ss_state=0x7
+V (24317) wifi:update scan history ssid=TP-Link_2A33, channel=6
+D (24317) wifi:scan end: arg=0x0, status=0, ss_state=0x7
+D (24327) wifi:find first mathched ssid, scan done
+V (24327) wifi:back home chan=<1,0>, current chan=<6,0>
+V (24337) wifi:ht20 freq=2412, chan=1
+D (24337) wifi:filter: set rx policy=4
+D (24337) wifi:first chan=1
+V (24347) wifi:scan_done: arg=0x0, status=0, cur_time=24363959, scan_id=128, scan state=0
+V (24347) wifi:call scan_done cb, arg=0x0
+D (24357) wifi:handoff_cb: status=0
+V (24357) wifi:best bss has set.
+D (24357) wifi:ap found, mac=34:e8:94:1b:2a:33
+V (24367) wifi:bssid=34:e8:94:1b:2a:33, LR=0
+D (24367) wifi:going for connection with bssid=34:e8:94:1b:2a:33
+D (24377) wifi:new_bss=0x3fca1498, cur_bss=0x0, new_chan=<6,2>, cur_chan=1
+D (24387) wifi:filter: set rx policy=5
+I (24387) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (24387) wifi:ht40d freq=2427, chan=6
+D (24397) wifi:connect_op: status=0, auth=5, cipher=3 
+D (24397) wifi:auth mode is not none
+D (24407) wifi:connect_bss: auth=1, reconnect=0
+I (24407) wifi:state: init -> auth (b0)
+D (24407) wifi:start 1s AUTH timer
+D (24417) wifi:clear scan ap list
+D (24417) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+D (24417) wifi:recv auth: seq=2, status=0
+I (24427) wifi:state: auth -> assoc (0)
+D (24437) wifi:restart connect 1s timer for assoc
+D (24457) wifi:recv assoc: type=0x10
+D (24457) wifi:filter: set rx policy=6
+I (24457) wifi:state: assoc -> run (10)
+D (24457) wifi:start 10s connect timer for 4 way handshake
+V (24467) wifi:wpa_psk start
+D (24467) gdma: new tx channel (0,0) at 0x3c103ab8[0m
+D (24467) gdma: new pair (0,1) at 0x3c103b34[0m
+D (24477) gdma: new rx channel (0,1) at 0x3c103af4[0m
+D (24477) gdma: tx channel (0,0), (1:16) bytes aligned, burst enabled[0m
+D (24487) gdma: rx channel (0,1), (1:16) bytes aligned, burst disabled[0m
+V (24497) wifi:wpa_psk handle succeed
+V (24497) wifi:tx process: alloc static tx buf, pb=0x0 l=135 hdr=0 data=135
+V (24527) wifi:wpa_psk start
+V (24527) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (24527) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (24537) intr_alloc: Connected src 77 to int 17 (cpu 0)[0m
+V (24547) wifi:wpa_psk handle succeed
+V (24547) wifi:tx process: alloc static tx buf, pb=0x0 l=113 hdr=0 data=113
+I (24627) wifi:connected with TP-Link_2A33, aid = 1, channel 6, 40D, bssid = 34:e8:94:1b:2a:33
+I (24627) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+D (24637) wifi:remove all except 34:e8:94:1b:2a:33 from rc list
+D (24637) wifi:clear blacklist
+D (24637) nvs: nvs_set sta.chan 1 6[0m
+D (24657) nvs: nvs_set_blob sta.apinfo 700[0m
+D (24667) wifi:filter: set rx policy=7
+I (24667) wifi:pm start, type: 1
+
+I (24667) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (24667) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+D (24677) wifi:Send sta connected event
+D (24677) wifi:connect status 1 -> 5
+D (24687) wifi:obss scan is disabled
+D (24687) wifi:start obss scan: obss scan is stopped
+I (24687) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+D (24697) event: running post WIFI_EVENT:4 with handler 0x4201ab68 and context 0x3fcb3934 on loop 0x3fcb2770[0m
+V (24707) esp_adapter: thread sem get: sem=0x3fcd0bcc[0m
+D (24707) esp_netif_handlers: esp_netif action connected with netif0x3fcb36ac from event_id=4[0m
+D (24717) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018a58[0m
+D (24727) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcb36ac[0m
+D (24737) esp_netif_lwip: check: local, if=0x3fcb36ac fn=0x42018eb8[0m
+D (24737) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb36ac[0m
+V (24747) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb36ac[0m
+D (24757) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (24757) esp_netif_lwip: check: remote, if=0x3fcb36ac fn=0x42018914[0m
+D (24767) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcb36ac[0m
+D (24767) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb36ac[0m
+D (24777) esp_netif_lwip: if0x3fcb36ac start ip lost tmr: already started[0m
+D (24787) esp_netif_lwip: starting dhcp client[0m
+V (24787) wifi:D (24787) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+tx process: alloc static tx buf, pb=0x3fca727c l=350 hdr=0 data=350
+D (24807) wifi:eb is dhcp or dns sport = 68, dport = 67
+D (24807) event: running post WIFI_EVENT:4 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (24837) wifi:tx process: alloc static tx buf, pb=0x3fca7928 l=350 hdr=0 data=350
+D (24837) wifi:eb is dhcp or dns sport = 68, dport = 67
+V (24907) wifi:tx process: alloc static tx buf, pb=0x3fca7d48 l=42 hdr=0 data=42
+V (25287) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+V (25787) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+D (25787) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcb373c[0m
+D (25787) esp_netif_lwip: if0x3fcb36ac ip changed=1[0m
+D (25787) event: running post IP_EVENT:0 with handler 0x4201a988 and context 0x3fcb3a1c on loop 0x3fcb2770[0m
+D (25797) wifi_init_default: Got IP wifi default handler entered[0m
+D (25807) esp_netif_handlers: esp_netif action got_ip with netif0x3fcb36ac from event_id=0[0m
+[0;32mI (25817) esp_netif_handlers: sta ip: 192.168.0.136, mask: 255.255.255.0, gw: 192.168.0.1[0m
+D (25827) event: running post IP_EVENT:0 with handler 0x4200a480 and context 0x3fcd04bc on loop 0x3fcb2770[0m
+[0;32mI (25837) example:take_picture: Got IP: 192.168.0.136[0m
+V (25867) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+V (26867) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+V (27027) wifi:update channel
+I (27027) wifi:new:<6,0>, old:<6,2>, ap:<255,255>, sta:<6,0>, prof:1
+V (27027) wifi:ht20 freq=2437, chan=6
+D (27027) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (27867) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+V (28867) wifi:tx process: alloc static tx buf, pb=0x3fca7174 l=42 hdr=0 data=42
+V (31017) wifi:update channel
+I (31017) wifi:new:<6,2>, old:<6,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (31017) wifi:ht40d freq=2427, chan=6
+D (31017) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (37057) wifi:update channel
+I (37057) wifi:new:<6,0>, old:<6,2>, ap:<255,255>, sta:<6,0>, prof:1
+V (37057) wifi:ht20 freq=2437, chan=6
+D (37067) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (38087) wifi:update channel
+I (38087) wifi:new:<6,2>, old:<6,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (38087) wifi:ht40d freq=2427, chan=6
+D (38087) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (45047) wifi:update channel
+I (45047) wifi:new:<6,0>, old:<6,2>, ap:<255,255>, sta:<6,0>, prof:1
+V (45047) wifi:ht20 freq=2437, chan=6
+D (45047) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
+V (48017) wifi:update channel
+I (48017) wifi:new:<6,2>, old:<6,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (48017) wifi:ht40d freq=2427, chan=6
+D (48017) event: running post WIFI_EVENT:41 with handler 0x4200a480 and context 0x3fcd049c on loop 0x3fcb2770[0m
