@@ -1,0 +1,1068 @@
+[0;32mI (138) esp_image: segment 1: paddr=000444d4 vaddr=3fc9b0ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42009f6d
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2024 16:50:40[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=344ach (214188) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000444d4 vaddr=3fc9b000 size=04e48h ( 20040) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049324 vaddr=40374000 size=06cf4h ( 27892) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=aaa50h (698960) map[0m
+[0;32mI (278) esp_image: segment 4: paddr=000faa78 vaddr=4037acf4 size=1021ch ( 66076) load[0m
+[0;32mI (302) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (302) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+V (314) mmap: after coalescing, 1 regions are left[0m
+[0;32mI (314) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (316) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (322) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (327) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (333) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (338) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (343) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (349) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (355) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (360) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (366) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (371) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (376) esp_psram: Speed: 40MHz[0m
+V (380) mmap: found laddr is 0xf0000[0m
+V (384) esp_psram: 8bit-aligned-region: actual_mapped_len is 0x800000 bytes[0m
+V (391) esp_psram: 8bit-aligned-range: 0x800000 B, starting from: 0x3c0f0000[0m
+D (398) cpu_start: Pro cpu up[0m
+D (401) cpu_start: Starting app cpu, entry point is 0x4037556c[0m
+D (0) cpu_start: App cpu up[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 1 access error intr clr & ena mask is: 0x1f
+[0;32mI (1138) esp_psram: SPI SRAM memory test OK[0m
+D (1146) clk: RTC_SLOW_CLK calibration value: 3810778[0m
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+[0;32mI (1152) cpu_start: Pro cpu start user code[0m
+[0;32mI (1155) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1160) cpu_start: Application information:[0m
+[0;32mI (1165) cpu_start: Project name:     netstick-test[0m
+[0;32mI (1171) cpu_start: App version:      72abfd2-dirty[0m
+[0;32mI (1176) cpu_start: Compile time:     Oct  8 2024 09:59:56[0m
+[0;32mI (1182) cpu_start: ELF file SHA256:  1c09db8e2...[0m
+[0;32mI (1188) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (1193) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (1198) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (1203) cpu_start: Chip rev:         v0.2[0m
+V (1208) memory_layout: reserved range is 0x3c0e4484 - 0x3c0e44b4[0m
+D (1214) memory_layout: Checking 7 reserved memory ranges:[0m
+D (1220) memory_layout: Reserved memory range 0x3c000000 - 0x3e000000[0m
+D (1226) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9b000[0m
+D (1233) memory_layout: Reserved memory range 0x3fc9b000 - 0x3fca3f98[0m
+D (1239) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000[0m
+D (1246) memory_layout: Reserved memory range 0x40374000 - 0x4038b000[0m
+D (1252) memory_layout: Reserved memory range 0x600fe000 - 0x600fe010[0m
+D (1259) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000[0m
+D (1265) memory_layout: Building list of available memory regions:[0m
+V (1271) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000[0m
+V (1278) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1287) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000[0m
+V (1294) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9b000[0m
+V (1303) memory_layout: Region 0x3fc9b000 - 0x3fca0000 inside of reserved 0x3fc9b000 - 0x3fca3f98[0m
+V (1312) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000[0m
+V (1319) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9b000 - 0x3fca3f98[0m
+D (1329) memory_layout: Available memory region 0x3fca3f98 - 0x3fcb0000[0m
+V (1335) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000[0m
+D (1342) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000[0m
+V (1349) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000[0m
+D (1355) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000[0m
+V (1362) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000[0m
+D (1369) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000[0m
+V (1375) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710[0m
+D (1382) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710[0m
+V (1389) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000[0m
+V (1395) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000[0m
+D (1405) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34[0m
+V (1412) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000[0m
+D (1418) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000[0m
+V (1425) memory_layout: Examining memory region 0x3c000000 - 0x3e000000[0m
+V (1432) memory_layout: Region 0x3c000000 - 0x3e000000 inside of reserved 0x3c000000 - 0x3e000000[0m
+V (1441) memory_layout: Examining memory region 0x600fe000 - 0x60100000[0m
+V (1447) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe010[0m
+V (1457) memory_layout: End of region 0x600fe010 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000[0m
+D (1466) memory_layout: Available memory region 0x600fe010 - 0x600fffe8[0m
+[0;32mI (1473) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (1480) heap_init: New heap initialised at 0x3fca3f98[0m
+[0;32mI (1485) heap_init: At 3FCA3F98 len 00045778 (277 KiB): RAM[0m
+[0;32mI (1492) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+D (1498) heap_init: New heap initialised at 0x3fcf0000[0m
+[0;32mI (1503) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+D (1509) heap_init: New heap initialised at 0x600fe010[0m
+[0;32mI (1515) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (1521) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+V (1529) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1535) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1543) intr_alloc: Connected src 39 to int 2 (cpu 0)[0m
+V (1549) memspi: raw_chip_id: 1740C8
+[0m
+V (1552) memspi: chip_id: C84017
+[0m
+V (1556) memspi: raw_chip_id: 1740C8
+[0m
+V (1559) memspi: chip_id: C84017
+[0m
+D (1563) spi_flash: trying chip: issi[0m
+D (1567) spi_flash: trying chip: gd[0m
+[0;32mI (1570) spi_flash: detected chip: gd[0m
+[0;32mI (1575) spi_flash: flash io: dio[0m
+[0;33mW (1579) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (1592) cpu_start: calling init function: 0x4208ba94[0m
+D (1597) cpu_start: calling init function: 0x4208afb0[0m
+D (1602) cpu_start: calling init function: 0x42019e60[0m
+D (1607) cpu_start: calling init function: 0x42011f08[0m
+D (1612) cpu_start: calling init function: 0x42011098[0m
+[0;33mW (1618) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+D (1628) cpu_start: calling init function: 0x4037c71c[0m
+D (1633) cpu_start: calling init function: 0x42002168[0m
+D (1639) cpu_start: calling init function: 0x42007958 on core: 0[0m
+V (1645) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1651) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02[0m
+D (1659) intr_alloc: Connected src 59 to int 3 (cpu 0)[0m
+D (1664) cpu_start: calling init function: 0x420051a0 on core: 0[0m
+[0;32mI (1671) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1677) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (1684) cpu_start: calling init function: 0x420032fc on core: 0[0m
+V (1691) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1697) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (1705) intr_alloc: Connected src 79 to int 9 (cpu 0)[0m
+D (1710) app_start: Starting scheduler on CPU0[0m
+V (1715) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1715) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (1715) intr_alloc: Connected src 57 to int 12 (cpu 0)[0m
+V (1715) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1725) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E[0m
+D (1725) intr_alloc: Connected src 80 to int 2 (cpu 1)[0m
+D (1735) app_start: Starting scheduler on CPU1[0m
+V (1735) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (1745) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402[0m
+D (1755) intr_alloc: Connected src 58 to int 3 (cpu 1)[0m
+[0;32mI (1715) main_task: Started on CPU0[0m
+D (1765) heap_init: New heap initialised at 0x3fce9710[0m
+[0;32mI (1765) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+D (1775) esp_psram: Allocating block of size 32768 bytes[0m
+V (1785) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (1785) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (1795) intr_alloc: Connected src 52 to int 13 (cpu 0)[0m
+[0;32mI (1805) main_task: Calling app_main()[0m
+V (1805) partition: Loading the partition table[0m
+V (1815) mmap: actual_mapped_len is 0x10000[0m
+V (1815) calculated md5: 0x3fca7978   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1825) stored md5: 0x3c8f8070   f4 ad 4f 45 38 56 4b 5d  74 35 b6 2c 75 b6 95 24  |..OE8VK]t5.,u..$|[0m
+V (1835) partition: Partition table MD5 verified[0m
+[0;32mI (1865) example:take_picture: Initializing Wi-Fi...[0m
+D (1865) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1865) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1875) event: running task for loop 0x3fcb2758[0m
+D (1875) event: created task for loop 0x3fcb2758[0m
+D (1885) event: created event loop 0x3fcb2758[0m
+D (1885) esp_netif_lwip: check: remote, if=0x3fca7910 fn=0x4201797c[0m
+V (1895) esp_netif_objects: esp_netif_add_to_list_unsafe 0x3fcb3694[0m
+D (1895) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1905) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1915) pp: pp rom version: e7ae62f[0m
+[0;32mI (1915) net80211: net80211 rom version: e7ae62f[0m
+D (1925) nvs: nvs_open_from_partition misc 1[0m
+I (1935) wifi:wifi driver task: 3fcb60cc, prio:23, stack:6656, core=0
+V (1935) esp_adapter: thread sem create: sem=0x3fcb6228[0m
+V (1935) esp_adapter: thread sem get: sem=0x3fcb6228[0m
+D (1945) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1955) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1955) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (1965) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (1975) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (1975) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (1985) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1995) nvs: nvs_get opmode 1[0m
+D (1995) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (2005) nvs: nvs_get sta.authmode 1[0m
+D (2005) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (2005) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (2015) nvs: nvs_get sta.chan 1[0m
+D (2015) nvs: nvs_get auto.conn 1[0m
+D (2015) nvs: nvs_get bssid.set 1[0m
+D (2025) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (2025) nvs: nvs_get sta.lis_intval 2[0m
+D (2025) nvs: nvs_get sta.phym 1[0m
+D (2035) nvs: nvs_get sta.phybw 1[0m
+D (2035) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (2045) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (2045) nvs: nvs_get sta.scan_method 1[0m
+D (2045) nvs: nvs_get sta.sort_method 1[0m
+D (2055) nvs: nvs_get sta.minrssi 1[0m
+D (2055) nvs: nvs_get sta.minauth 1[0m
+D (2055) nvs: nvs_get sta.pmf_e 1[0m
+D (2065) nvs: nvs_get sta.pmf_r 1[0m
+D (2065) nvs: nvs_get sta.btm_e 1[0m
+D (2065) nvs: nvs_get sta.rrm_e 1[0m
+D (2075) nvs: nvs_get sta.mbo_e 1[0m
+D (2075) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (2085) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (2085) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (2085) nvs: nvs_get ap.chan 1[0m
+D (2095) nvs: nvs_get ap.authmode 1[0m
+D (2095) nvs: nvs_get ap.hidden 1[0m
+D (2095) nvs: nvs_get ap.max.conn 1[0m
+D (2105) nvs: nvs_get bcn.interval 2[0m
+D (2105) nvs: nvs_get ap.phym 1[0m
+D (2105) nvs: nvs_get ap.phybw 1[0m
+D (2115) nvs: nvs_get ap.sndchan 1[0m
+D (2115) nvs: nvs_get ap.pmf_e 1[0m
+D (2115) nvs: nvs_get ap.pmf_r 1[0m
+D (2125) nvs: nvs_get ap.p_cipher 1[0m
+D (2125) nvs: nvs_get lorate 1[0m
+D (2125) nvs: nvs_get_str_or_blob country[0m
+D (2135) nvs: nvs_get ap.ftm_r 1[0m
+D (2135) nvs: nvs_get sta.ft 1[0m
+D (2145) nvs: nvs_get sta.owe 1[0m
+D (2145) nvs: nvs_get sta.trans_d 1[0m
+D (2145) nvs: nvs_get sta.sae_h2e 1[0m
+D (2155) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (2155) nvs: nvs_get sta.bss_retry 1[0m
+D (2155) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (2165) nvs: nvs_get sta.he_dcm 1[0m
+D (2165) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (2165) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (2175) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (2175) nvs: nvs_get sta.he_su_b_d 1[0m
+D (2185) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (2185) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (2185) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (2195) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (2195) nvs: nvs_get ap.sae_h2e 1[0m
+D (2205) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (2205) nvs: nvs_get nan.phym 1[0m
+D (2205) nvs: nvs_set ap.sndchan 1 1[0m
+I (2215) wifi:wifi firmware version: 3e0076f
+I (2215) wifi:wifi certification version: v7.0
+I (2225) wifi:config NVS flash: enabled
+I (2225) wifi:config nano formating: disabled
+I (2225) wifi:Init data frame dynamic rx buffer num: 32
+I (2235) wifi:Init static rx mgmt buffer num: 5
+I (2235) wifi:Init management short buffer num: 32
+I (2245) wifi:Init static tx buffer num: 16
+I (2245) wifi:Init tx cache buffer num: 32
+I (2245) wifi:Init static tx FG buffer num: 2
+I (2255) wifi:Init static rx buffer size: 1600
+I (2255) wifi:Init static rx buffer num: 10
+I (2265) wifi:Init dynamic rx buffer num: 32
+V (2265) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+V (2275) esp_adapter: thread sem get: sem=0x3fcb6228[0m
+[0;32mI (2275) wifi_init: rx ba win: 6[0m
+[0;32mI (2285) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2285) wifi_init: udp mbox: 6[0m
+[0;32mI (2285) wifi_init: tcp mbox: 6[0m
+[0;32mI (2295) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2295) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2305) wifi_init: tcp mss: 1440[0m
+[0;32mI (2305) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2315) wifi_init: WiFi RX IRAM OP enabled[0m
+V (2315) esp_adapter: thread sem get: sem=0x3fcb6228[0m
+D (2325) nvs: nvs_get opmode 1[0m
+V (2325) esp_adapter: thread sem get: sem=0x3fcb6228[0m
+D (2325) wifi:clear blacklist
+D (2335) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (2335) nvs: nvs_get sta.pmf_e 1[0m
+V (2335) esp_adapter: thread sem get: sem=0x3fcb6228[0m
+[0;32mI (2345) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+D (2355) phy_init: loading PHY init data from application binary[0m
+D (2355) nvs: nvs_open_from_partition phy 0[0m
+D (2365) nvs: nvs_get cal_version 4[0m
+V (2365) phy_init: phy_get_rf_cal_version: 670[0m
+D (2365) nvs: nvs_get_str_or_blob cal_mac[0m
+D (2375) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2375) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2385) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2395) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2405) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2405) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2415) nvs: nvs_get_str_or_blob cal_data[0m
+D (2425) nvs: nvs_close 3[0m
+D (2425) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2425) efuse: In EFUSE_BLK1__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2435) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 24 bit[0m
+D (2445) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 16 bit[0m
+D (2445) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 8 bit[0m
+D (2455) efuse: In EFUSE_BLK1__DATA0_REG is used 8 bits starting with 0 bit[0m
+D (2485) temperature_sensor: range changed, change to index 2[0m
+V (2495) wifi:ht20 freq=2412, chan=1
+D (2495) wifi:filter: set rx policy=0
+I (2495) wifi:mode : sta (f0:9e:9e:03:0f:e4)
+I (2495) wifi:enable tsf
+D (2495) wifi:filter: set rx policy=1
+D (2505) wifi:connect status 0 -> 0
+D (2505) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+D (2515) event: running post WIFI_EVENT:2 with handler 0x4201a0d8 and context 0x3fcb38b4 on loop 0x3fcb2758[0m
+D (2525) wifi_init_default: wifi_start esp-netif:0x3fcb3694 event-id2[0m
+D (2535) wifi_init_default: WIFI mac address: f0 9e 9e 3 f e4[0m
+V (2535) esp_adapter: thread sem create: sem=0x3fcd0bb4[0m
+V (2545) esp_adapter: thread sem get: sem=0x3fcd0bb4[0m
+D (2545) esp_netif_lwip: check: remote, if=0x3fcb3694 fn=0x42017370[0m
+D (2555) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (2555) example:take_picture: Wi-Fi initialized, connecting to SSID: TP-Link_2A33[0m
+D (2555) esp_netif_handlers: esp_netif action has started with netif0x3fcb3694 from event_id=2[0m
+D (2575) esp_netif_lwip: check: remote, if=0x3fcb3694 fn=0x42017c34[0m
+D (2585) esp_netif_lwip: esp_netif_start_api 0x3fcb3694[0m
+D (2585) esp_netif_lwip: check: remote, if=0x3fca7a90 fn=0x4201735c[0m
+D (2585) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3fcb3694[0m
+D (2605) esp_netif_lwip: check: local, if=0x3fcb3694 fn=0x42018458[0m
+D (2605) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb3694[0m
+V (2615) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb3694[0m
+D (2625) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2625) event: running post WIFI_EVENT:2 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+V (2635) esp_adapter: thread sem get: sem=0x3fcd0bb4[0m
+D (2645) wifi:Start wifi connect
+D (2645) wifi:connect status 0 -> 0
+D (2645) wifi:connect chan=0
+D (2645) wifi:first chan=6
+D (2655) wifi:connect status 0 -> 1
+D (2655) wifi:filter: set rx policy=3
+D (2655) wifi:clear scan ap list
+D (2665) wifi:start scan: type=0x50f, priority=2, cb=0x42041be4, arg=0x0, ss_state=0x1, time=2681914, index=0
+V (2675) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (2675) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (2685) wifi:change: chan<6,0>, dur<0,120>
+V (2685) wifi:ht20 freq=2437, chan=6
+V (2685) wifi:enter start op, arg=0x3fca1182
+V (2695) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca1182, status=0
+V (2705) wifi:scan specific ssid=TP-Link_2A33
+V (2705) wifi:start max timer
+D (2705) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2715) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3fcb3694[0m
+D (2715) wifi:rsn valid: gcipher=1 ucipher=3 akm=5 mac=34:e8:94:1b:2a:33
+V (2725) wifi:updated connection retries to 0
+V (2725) wifi:home channel=0, new channel=2
+D (2735) wifi:profile match: ss_state=0x7
+V (2735) wifi:scan histroy table is not full yet, add
+V (2745) wifi:add ssid=TP-Link_2A33, chan=6 to scan history
+D (2745) wifi:scan end: arg=0x0, status=0, ss_state=0x7
+D (2755) wifi:find first mathched ssid, scan done
+V (2755) wifi:back home chan=<1,0>, current chan=<6,0>
+V (2765) wifi:ht20 freq=2412, chan=1
+D (2765) wifi:filter: set rx policy=4
+D (2765) wifi:first chan=1
+V (2775) wifi:scan_done: arg=0x0, status=0, cur_time=2790743, scan_id=128, scan state=0
+V (2775) wifi:call scan_done cb, arg=0x0
+D (2785) wifi:handoff_cb: status=0
+V (2785) wifi:best bss has set.
+D (2785) wifi:ap found, mac=34:e8:94:1b:2a:33
+V (2795) wifi:bssid=34:e8:94:1b:2a:33, LR=0
+D (2795) wifi:going for connection with bssid=34:e8:94:1b:2a:33
+D (2805) wifi:new_bss=0x3fca1480, cur_bss=0x0, new_chan=<6,2>, cur_chan=1
+D (2805) wifi:filter: set rx policy=5
+I (2815) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (2815) wifi:ht40d freq=2427, chan=6
+D (2825) wifi:connect_op: status=0, auth=5, cipher=3 
+D (2825) wifi:auth mode is not none
+D (2825) wifi:connect_bss: auth=1, reconnect=0
+I (2835) wifi:state: init -> auth (b0)
+D (2835) wifi:start 1s AUTH timer
+D (2835) wifi:clear scan ap list
+D (2845) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+D (2845) wifi:recv auth: seq=2, status=0
+I (2855) wifi:state: auth -> assoc (0)
+D (2855) wifi:restart connect 1s timer for assoc
+[0;32mI (2865) example:take_picture: IP Address: 0.0.0.0[0m
+[0;32mI (2865) example:take_picture: Netmask: 0.0.0.0[0m
+D (2875) wifi:recv assoc: type=0x10
+D (2875) wifi:filter: set rx policy=6
+I (2885) wifi:state: assoc -> run (10)
+D (2885) wifi:start 10s connect timer for 4 way handshake
+V (2885) wifi:wpa_psk start
+D (2895) gdma: new group (0) at 0x3c0f0c60[0m
+D (2895) gdma: new pair (0,0) at 0x3c0f0cec[0m
+D (2905) gdma: new tx channel (0,0) at 0x3c0f0c24[0m
+D (2905) gdma: new rx channel (0,0) at 0x3c0f0d10[0m
+D (2915) gdma: tx channel (0,0), (1:16) bytes aligned, burst enabled[0m
+D (2915) gdma: rx channel (0,0), (1:16) bytes aligned, burst disabled[0m
+V (2925) wifi:wpa_psk handle succeed
+V (2925) wifi:tx process: alloc static tx buf, pb=0x0 l=135 hdr=0 data=135
+[0;32mI (2935) example:take_picture: Gateway: 0.0.0.0[0m
+D (2935) esp_netif_lwip: check: remote, if=0x3fcb3694 fn=0x42018114[0m
+V (2935) wifi:wpa_psk start
+V (2945) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (2955) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE[0m
+D (2965) intr_alloc: Connected src 77 to int 17 (cpu 0)[0m
+V (2965) wifi:wpa_psk handle succeed
+V (2975) wifi:tx process: alloc static tx buf, pb=0x0 l=113 hdr=0 data=113
+D (2975) esp_netif_lwip: esp_netif_get_dns_info: esp_netif=0x3fcb3694 type=0[0m
+I (2975) wifi:connected with TP-Link_2A33, aid = 1, channel 6, 40D, bssid = 34:e8:94:1b:2a:33
+D (2985) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+I (2995) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+D (3005) wifi:remove all except 34:e8:94:1b:2a:33 from rc list
+D (3005) wifi:clear blacklist
+D (3015) nvs: nvs_set sta.chan 1 6[0m
+D (3015) nvs: nvs_set_blob sta.apinfo 700[0m
+[0;32mI (3015) example:take_picture: DNS Server: 0.0.0.0[0m
+D (3025) wifi:filter: set rx policy=7
+I (3025) wifi:pm start, type: 1
+
+I (3035) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3035) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+D (3045) wifi:Send sta connected event
+D (3045) wifi:connect status 1 -> 5
+D (3055) wifi:obss scan is disabled
+D (3055) wifi:start obss scan: obss scan is stopped
+I (3065) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+D (3065) event: running post WIFI_EVENT:4 with handler 0x4201a108 and context 0x3fcb391c on loop 0x3fcb2758[0m
+V (3075) esp_adapter: thread sem get: sem=0x3fcd0bb4[0m
+D (3085) esp_netif_handlers: esp_netif action connected with netif0x3fcb3694 from event_id=4[0m
+D (3085) esp_netif_lwip: check: remote, if=0x3fcb3694 fn=0x42017ff8[0m
+D (3095) esp_netif_lwip: esp_netif_up_api esp_netif:0x3fcb3694[0m
+[0;32mI (3095) main_task: Returned from app_main()[0m
+D (3105) esp_netif_lwip: check: local, if=0x3fcb3694 fn=0x42018458[0m
+[0;32mI (3105) example:take_picture: Initializing camera...[0m
+D (3115) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3fcb3694[0m
+V (3125) esp_netif_lwip: esp_netif_is_netif_up esp_netif:0x3fcb3694[0m
+D (3135) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3135) esp_netif_lwip: check: remote, if=0x3fcb3694 fn=0x42017eb4[0m
+D (3135) gdma: new pair (0,1) at 0x3c0f0d90[0m
+D (3145) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3fcb3694[0m
+D (3155) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3fcb3694[0m
+D (3165) esp_netif_lwip: if0x3fcb3694 start ip lost tmr: interval=120[0m
+D (3165) esp_netif_lwip: starting dhcp client[0m
+V (3175) wifi:D (3175) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+tx process: alloc static tx buf, pb=0x3fcd115c l=350 hdr=0 data=350D (3175) gdma: new rx channel (0,1) at 0x3c0f0d50[0m
+
+D (3195) wifi:[0;32mI (3195) s3 ll_cam: DMA Channel=1[0m
+eb is dhcp or dns sport = 68, dport = 67
+[0;32mI (3195) cam_hal: cam init ok[0m
+D (3185) event: running post WIFI_EVENT:4 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+V (3215) wifi:D (3205) camera: Enabling XCLK output[0m
+tx process: alloc static tx buf, pb=0x3fcd1264 l=350 hdr=0 data=350D (3215) camera: Initializing SCCB[0m
+
+[0;32mI (3225) sccb: pin_sda 4 pin_scl 5[0m
+D (3225) wifi:[0;32mI (3235) sccb: sccb_i2c_port=1[0m
+V (3235) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (3245) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0xE[0m
+D (3255) intr_alloc: Connected src 43 to int 4 (cpu 1)[0m
+eb is dhcp or dns sport = 68, dport = 67
+D (3255) camera: Searching for camera address[0m
+[0;32mI (3275) camera: Detected camera at address=0x30[0m
+V (3275) wifi:tx process: alloc static tx buf, pb=0x3fcd1338 l=42 hdr=0 data=42
+[0;32mI (3275) camera: Detected OV2640 camera[0m
+D (3285) ov2640: OV2640 Attached[0m
+[0;32mI (3285) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+D (3295) camera: Doing SW reset of sensor[0m
+[0;32mI (3385) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (3385) cam_hal: Allocating 3840 Byte frame buffer in PSRAM[0m
+[0;32mI (3385) cam_hal: Allocating 3840 Byte frame buffer in PSRAM[0m
+V (3395) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (3395) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (3405) intr_alloc: Connected src 67 to int 9 (cpu 1)[0m
+V (3415) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args[0m
+V (3415) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x50E[0m
+D (3425) intr_alloc: Connected src 24 to int 9 (cpu 1)[0m
+[0;32mI (3435) cam_hal: cam config ok[0m
+D (3435) camera: Setting frame size to 160x120[0m
+[0;32mI (3445) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (3545) example:take_picture: Taking picture...[0m
+[0;33mW (3575) cam_hal: NO-SOI[0m
+[0;33mW (3615) cam_hal: NO-SOI[0m
+[0;33mW (3655) cam_hal: NO-SOI[0m
+V (3675) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+[0;33mW (3695) cam_hal: NO-SOI[0m
+[0;33mW (3735) cam_hal: NO-SOI[0m
+[0;33mW (3775) cam_hal: NO-SOI[0m
+[0;33mW (3815) cam_hal: NO-SOI[0m
+[0;33mW (3855) cam_hal: NO-SOI[0m
+V (3865) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+[0;33mW (3895) cam_hal: NO-SOI[0m
+[0;33mW (3935) cam_hal: NO-SOI[0m
+[0;33mW (3975) cam_hal: NO-SOI[0m
+[0;33mW (4015) cam_hal: NO-SOI[0m
+[0;33mW (4055) cam_hal: NO-SOI[0m
+[0;33mW (4095) cam_hal: NO-SOI[0m
+[0;33mW (4135) cam_hal: NO-SOI[0m
+V (4175) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+D (4175) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3fcb3724[0m
+D (4175) esp_netif_lwip: if0x3fcb3694 ip changed=1[0m
+[0;33mW (4175) cam_hal: NO-SOI[0m
+D (4175) event: running post IP_EVENT:0 with handler 0x42019f28 and context 0x3fcb3a04 on loop 0x3fcb2758[0m
+D (4195) wifi_init_default: Got IP wifi default handler entered[0m
+D (4195) esp_netif_handlers: esp_netif action got_ip with netif0x3fcb3694 from event_id=0[0m
+[0;32mI (4205) esp_netif_handlers: sta ip: 192.168.0.136, mask: 255.255.255.0, gw: 192.168.0.1[0m
+D (4215) event: running post IP_EVENT:0 with handler 0x4200a41c and context 0x3fcd04a4 on loop 0x3fcb2758[0m
+[0;33mW (4215) cam_hal: NO-SOI[0m
+[0;32mI (4225) example:take_picture: Got IP: 192.168.0.136[0m
+[0;33mW (4255) cam_hal: NO-SOI[0m
+[0;33mW (4295) cam_hal: NO-SOI[0m
+[0;33mW (4335) cam_hal: NO-SOI[0m
+[0;33mW (4375) cam_hal: NO-SOI[0m
+[0;33mW (4415) cam_hal: NO-SOI[0m
+[0;33mW (4455) cam_hal: NO-SOI[0m
+[0;33mW (4495) cam_hal: NO-SOI[0m
+[0;33mW (4535) cam_hal: NO-SOI[0m
+[0;33mW (4575) cam_hal: NO-SOI[0m
+[0;33mW (4615) cam_hal: NO-SOI[0m
+[0;33mW (4655) cam_hal: NO-SOI[0m
+[0;33mW (4695) cam_hal: NO-SOI[0m
+[0;33mW (4735) cam_hal: NO-SOI[0m
+[0;33mW (4775) cam_hal: NO-SOI[0m
+[0;33mW (4815) cam_hal: NO-SOI[0m
+[0;33mW (4855) cam_hal: NO-SOI[0m
+V (4865) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+[0;33mW (4895) cam_hal: NO-SOI[0m
+[0;33mW (4935) cam_hal: NO-SOI[0m
+[0;33mW (4975) cam_hal: NO-SOI[0m
+[0;33mW (5015) cam_hal: NO-SOI[0m
+[0;33mW (5055) cam_hal: NO-SOI[0m
+[0;33mW (5095) cam_hal: NO-SOI[0m
+[0;33mW (5135) cam_hal: NO-SOI[0m
+[0;33mW (5175) cam_hal: NO-SOI[0m
+[0;33mW (5215) cam_hal: NO-SOI[0m
+[0;33mW (5255) cam_hal: NO-SOI[0m
+[0;33mW (5295) cam_hal: NO-SOI[0m
+[0;33mW (5335) cam_hal: NO-SOI[0m
+[0;33mW (5375) cam_hal: NO-SOI[0m
+[0;33mW (5415) cam_hal: NO-SOI[0m
+[0;33mW (5455) cam_hal: NO-SOI[0m
+[0;33mW (5495) cam_hal: NO-SOI[0m
+[0;33mW (5535) cam_hal: NO-SOI[0m
+[0;33mW (5575) cam_hal: NO-SOI[0m
+[0;33mW (5615) cam_hal: NO-SOI[0m
+[0;33mW (5655) cam_hal: NO-SOI[0m
+[0;33mW (5695) cam_hal: NO-SOI[0m
+[0;33mW (5735) cam_hal: NO-SOI[0m
+[0;33mW (5775) cam_hal: NO-SOI[0m
+[0;33mW (5815) cam_hal: NO-SOI[0m
+[0;33mW (5855) cam_hal: NO-SOI[0m
+V (5865) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+[0;33mW (5895) cam_hal: NO-SOI[0m
+[0;33mW (5935) cam_hal: NO-SOI[0m
+[0;33mW (5975) cam_hal: NO-SOI[0m
+[0;33mW (6015) cam_hal: NO-SOI[0m
+[0;33mW (6055) cam_hal: NO-SOI[0m
+[0;33mW (6095) cam_hal: NO-SOI[0m
+[0;33mW (6135) cam_hal: NO-SOI[0m
+[0;33mW (6175) cam_hal: NO-SOI[0m
+[0;33mW (6215) cam_hal: NO-SOI[0m
+[0;33mW (6255) cam_hal: NO-SOI[0m
+[0;33mW (6295) cam_hal: NO-SOI[0m
+[0;33mW (6335) cam_hal: NO-SOI[0m
+[0;33mW (6375) cam_hal: NO-SOI[0m
+[0;33mW (6415) cam_hal: NO-SOI[0m
+[0;33mW (6455) cam_hal: NO-SOI[0m
+[0;33mW (6495) cam_hal: NO-SOI[0m
+[0;33mW (6535) cam_hal: NO-SOI[0m
+[0;33mW (6575) cam_hal: NO-SOI[0m
+[0;33mW (6615) cam_hal: NO-SOI[0m
+[0;33mW (6655) cam_hal: NO-SOI[0m
+[0;33mW (6695) cam_hal: NO-SOI[0m
+[0;33mW (6735) cam_hal: NO-SOI[0m
+[0;33mW (6775) cam_hal: NO-SOI[0m
+[0;33mW (6815) cam_hal: NO-SOI[0m
+[0;33mW (6855) cam_hal: NO-SOI[0m
+V (6865) wifi:tx process: alloc static tx buf, pb=0x3fca6cf0 l=42 hdr=0 data=42
+[0;33mW (6895) cam_hal: NO-SOI[0m
+[0;33mW (6935) cam_hal: NO-SOI[0m
+[0;33mW (6975) cam_hal: NO-SOI[0m
+[0;33mW (7015) cam_hal: NO-SOI[0m
+[0;33mW (7055) cam_hal: NO-SOI[0m
+[0;33mW (7095) cam_hal: NO-SOI[0m
+[0;33mW (7135) cam_hal: NO-SOI[0m
+[0;33mW (7175) cam_hal: NO-SOI[0m
+[0;33mW (7215) cam_hal: NO-SOI[0m
+[0;33mW (7255) cam_hal: NO-SOI[0m
+[0;33mW (7295) cam_hal: NO-SOI[0m
+[0;33mW (7335) cam_hal: NO-SOI[0m
+[0;33mW (7375) cam_hal: NO-SOI[0m
+[0;33mW (7415) cam_hal: NO-SOI[0m
+[0;33mW (7455) cam_hal: NO-SOI[0m
+[0;33mW (7495) cam_hal: NO-SOI[0m
+[0;33mW (7535) cam_hal: NO-SOI[0m
+[0;33mW (7575) cam_hal: NO-SOI[0m
+[0;33mW (7615) cam_hal: NO-SOI[0m
+[0;33mW (7655) cam_hal: NO-SOI[0m
+[0;33mW (7695) cam_hal: NO-SOI[0m
+[0;33mW (7735) cam_hal: NO-SOI[0m
+[0;33mW (7775) cam_hal: NO-SOI[0m
+[0;33mW (7815) cam_hal: NO-SOI[0m
+[0;33mW (7855) cam_hal: NO-SOI[0m
+[0;33mW (7895) cam_hal: NO-SOI[0m
+[0;33mW (7935) cam_hal: NO-SOI[0m
+[0;33mW (7975) cam_hal: NO-SOI[0m
+[0;33mW (8015) cam_hal: NO-SOI[0m
+[0;33mW (8055) cam_hal: NO-SOI[0m
+[0;33mW (8095) cam_hal: NO-SOI[0m
+[0;33mW (8135) cam_hal: NO-SOI[0m
+[0;33mW (8175) cam_hal: NO-SOI[0m
+V (8185) wifi:update channel
+I (8185) wifi:new:<6,0>, old:<6,2>, ap:<255,255>, sta:<6,0>, prof:1
+V (8185) wifi:ht20 freq=2437, chan=6
+D (8185) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+[0;33mW (8215) cam_hal: NO-SOI[0m
+[0;33mW (8255) cam_hal: NO-SOI[0m
+[0;33mW (8295) cam_hal: NO-SOI[0m
+[0;33mW (8335) cam_hal: NO-SOI[0m
+[0;33mW (8375) cam_hal: NO-SOI[0m
+[0;33mW (8415) cam_hal: NO-SOI[0m
+[0;33mW (8455) cam_hal: NO-SOI[0m
+[0;33mW (8495) cam_hal: NO-SOI[0m
+[0;33mW (8535) cam_hal: NO-SOI[0m
+[0;33mW (8575) cam_hal: NO-SOI[0m
+[0;33mW (8615) cam_hal: NO-SOI[0m
+[0;33mW (8655) cam_hal: NO-SOI[0m
+[0;33mW (8695) cam_hal: NO-SOI[0m
+[0;33mW (8735) cam_hal: NO-SOI[0m
+[0;33mW (8775) cam_hal: NO-SOI[0m
+[0;33mW (8815) cam_hal: NO-SOI[0m
+[0;33mW (8855) cam_hal: NO-SOI[0m
+[0;33mW (8895) cam_hal: NO-SOI[0m
+[0;33mW (8935) cam_hal: NO-SOI[0m
+[0;33mW (8975) cam_hal: NO-SOI[0m
+[0;33mW (9015) cam_hal: NO-SOI[0m
+[0;33mW (9055) cam_hal: NO-SOI[0m
+[0;33mW (9095) cam_hal: NO-SOI[0m
+[0;33mW (9135) cam_hal: NO-SOI[0m
+[0;33mW (9175) cam_hal: NO-SOI[0m
+V (9205) wifi:update channel
+I (9205) wifi:new:<6,2>, old:<6,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (9205) wifi:ht40d freq=2427, chan=6
+D (9205) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+[0;33mW (9215) cam_hal: NO-SOI[0m
+[0;33mW (9255) cam_hal: NO-SOI[0m
+[0;33mW (9295) cam_hal: NO-SOI[0m
+[0;33mW (9335) cam_hal: NO-SOI[0m
+[0;33mW (9375) cam_hal: NO-SOI[0m
+[0;33mW (9415) cam_hal: NO-SOI[0m
+[0;33mW (9455) cam_hal: NO-SOI[0m
+[0;33mW (9495) cam_hal: NO-SOI[0m
+[0;33mW (9535) cam_hal: NO-SOI[0m
+[0;33mW (9575) cam_hal: NO-SOI[0m
+[0;33mW (9615) cam_hal: NO-SOI[0m
+[0;33mW (9655) cam_hal: NO-SOI[0m
+[0;33mW (9695) cam_hal: NO-SOI[0m
+[0;33mW (9735) cam_hal: NO-SOI[0m
+[0;33mW (9775) cam_hal: NO-SOI[0m
+[0;33mW (9815) cam_hal: NO-SOI[0m
+[0;33mW (9855) cam_hal: NO-SOI[0m
+[0;33mW (9895) cam_hal: NO-SOI[0m
+[0;33mW (9935) cam_hal: NO-SOI[0m
+[0;33mW (9975) cam_hal: NO-SOI[0m
+[0;33mW (10015) cam_hal: NO-SOI[0m
+[0;33mW (10055) cam_hal: NO-SOI[0m
+[0;33mW (10095) cam_hal: NO-SOI[0m
+[0;33mW (10135) cam_hal: NO-SOI[0m
+[0;33mW (10175) cam_hal: NO-SOI[0m
+[0;33mW (10215) cam_hal: NO-SOI[0m
+[0;33mW (10255) cam_hal: NO-SOI[0m
+[0;33mW (10295) cam_hal: NO-SOI[0m
+[0;33mW (10335) cam_hal: NO-SOI[0m
+[0;33mW (10375) cam_hal: NO-SOI[0m
+[0;33mW (10415) cam_hal: NO-SOI[0m
+[0;33mW (10455) cam_hal: NO-SOI[0m
+[0;33mW (10495) cam_hal: NO-SOI[0m
+[0;33mW (10535) cam_hal: NO-SOI[0m
+[0;33mW (10575) cam_hal: NO-SOI[0m
+[0;33mW (10615) cam_hal: NO-SOI[0m
+[0;33mW (10655) cam_hal: NO-SOI[0m
+[0;33mW (10695) cam_hal: NO-SOI[0m
+[0;33mW (10735) cam_hal: NO-SOI[0m
+[0;33mW (10775) cam_hal: NO-SOI[0m
+[0;33mW (10815) cam_hal: NO-SOI[0m
+[0;33mW (10855) cam_hal: NO-SOI[0m
+[0;33mW (10895) cam_hal: NO-SOI[0m
+[0;33mW (10935) cam_hal: NO-SOI[0m
+[0;33mW (10975) cam_hal: NO-SOI[0m
+[0;33mW (11015) cam_hal: NO-SOI[0m
+[0;33mW (11055) cam_hal: NO-SOI[0m
+[0;33mW (11095) cam_hal: NO-SOI[0m
+[0;33mW (11135) cam_hal: NO-SOI[0m
+[0;33mW (11175) cam_hal: NO-SOI[0m
+[0;33mW (11215) cam_hal: NO-SOI[0m
+V (11255) wifi:[0;33mW (11255) cam_hal: NO-SOI[0m
+update channel
+I (11255) wifi:new:<6,0>, old:<6,2>, ap:<255,255>, sta:<6,0>, prof:1
+V (11255) wifi:ht20 freq=2437, chan=6
+D (11255) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+[0;33mW (11295) cam_hal: NO-SOI[0m
+[0;33mW (11335) cam_hal: NO-SOI[0m
+[0;33mW (11375) cam_hal: NO-SOI[0m
+[0;33mW (11415) cam_hal: NO-SOI[0m
+[0;33mW (11455) cam_hal: NO-SOI[0m
+[0;33mW (11495) cam_hal: NO-SOI[0m
+[0;33mW (11535) cam_hal: NO-SOI[0m
+[0;33mW (11545) cam_hal: Failed to get the frame on time![0m
+[0;31mE (11545) example:take_picture: Failed to capture image[0m
+[0;33mW (11575) cam_hal: NO-SOI[0m
+[0;33mW (11615) cam_hal: NO-SOI[0m
+[0;33mW (11655) cam_hal: NO-SOI[0m
+[0;33mW (11695) cam_hal: NO-SOI[0m
+[0;33mW (11735) cam_hal: NO-SOI[0m
+[0;33mW (11775) cam_hal: NO-SOI[0m
+[0;33mW (11815) cam_hal: NO-SOI[0m
+[0;33mW (11855) cam_hal: NO-SOI[0m
+[0;33mW (11895) cam_hal: NO-SOI[0m
+[0;33mW (11935) cam_hal: NO-SOI[0m
+[0;33mW (11975) cam_hal: NO-SOI[0m
+[0;33mW (12015) cam_hal: NO-SOI[0m
+[0;33mW (12055) cam_hal: NO-SOI[0m
+[0;33mW (12095) cam_hal: NO-SOI[0m
+[0;33mW (12135) cam_hal: NO-SOI[0m
+[0;33mW (12175) cam_hal: NO-SOI[0m
+V (12175) wifi:update channel
+I (12175) wifi:new:<6,2>, old:<6,0>, ap:<255,255>, sta:<6,2>, prof:1
+V (12175) wifi:ht40d freq=2427, chan=6
+D (12175) event: running post WIFI_EVENT:41 with handler 0x4200a41c and context 0x3fcd0484 on loop 0x3fcb2758[0m
+[0;33mW (12215) cam_hal: NO-SOI[0m
+[0;33mW (12255) cam_hal: NO-SOI[0m
+[0;33mW (12295) cam_hal: NO-SOI[0m
+[0;33mW (12335) cam_hal: NO-SOI[0m
+[0;33mW (12375) cam_hal: NO-SOI[0m
+[0;33mW (12415) cam_hal: NO-SOI[0m
+[0;33mW (12455) cam_hal: NO-SOI[0m
+[0;33mW (12495) cam_hal: NO-SOI[0m
+[0;33mW (12535) cam_hal: NO-SOI[0m
+[0;33mW (12575) cam_hal: NO-SOI[0m
+[0;33mW (12615) cam_hal: NO-SOI[0m
+[0;33mW (12655) cam_hal: NO-SOI[0m
+[0;33mW (12695) cam_hal: NO-SOI[0m
+[0;33mW (12735) cam_hal: NO-SOI[0m
+[0;33mW (12775) cam_hal: NO-SOI[0m
+[0;33mW (12815) cam_hal: NO-SOI[0m
+[0;33mW (12855) cam_hal: NO-SOI[0m
+[0;33mW (12895) cam_hal: NO-SOI[0m
+[0;33mW (12935) cam_hal: NO-SOI[0m
+[0;33mW (12975) cam_hal: NO-SOI[0m
+[0;33mW (13015) cam_hal: NO-SOI[0m
+[0;33mW (13055) cam_hal: NO-SOI[0m
+[0;33mW (13095) cam_hal: NO-SOI[0m
+[0;33mW (13135) cam_hal: NO-SOI[0m
+[0;33mW (13175) cam_hal: NO-SOI[0m
+[0;33mW (13215) cam_hal: NO-SOI[0m
+[0;33mW (13255) cam_hal: NO-SOI[0m
+[0;33mW (13295) cam_hal: NO-SOI[0m
+[0;33mW (13335) cam_hal: NO-SOI[0m
+[0;33mW (13375) cam_hal: NO-SOI[0m
+[0;33mW (13415) cam_hal: NO-SOI[0m
+[0;33mW (13455) cam_hal: NO-SOI[0m
+[0;33mW (13495) cam_hal: NO-SOI[0m
+[0;33mW (13535) cam_hal: NO-SOI[0m
+[0;33mW (13575) cam_hal: NO-SOI[0m
+[0;33mW (13615) cam_hal: NO-SOI[0m
+[0;33mW (13655) cam_hal: NO-SOI[0m
+[0;33mW (13695) cam_hal: NO-SOI[0m
+[0;33mW (13735) cam_hal: NO-SOI[0m
+[0;33mW (13775) cam_hal: NO-SOI[0m
+[0;33mW (13815) cam_hal: NO-SOI[0m
+[0;33mW (13855) cam_hal: NO-SOI[0m
+[0;33mW (13895) cam_hal: NO-SOI[0m
+[0;33mW (13935) cam_hal: NO-SOI[0m
+[0;33mW (13975) cam_hal: NO-SOI[0m
+[0;33mW (14015) cam_hal: NO-SOI[0m
+[0;33mW (14055) cam_hal: NO-SOI[0m
+[0;33mW (14095) cam_hal: NO-SOI[0m
+[0;33mW (14135) cam_hal: NO-SOI[0m
+[0;33mW (14175) cam_hal: NO-SOI[0m
+[0;33mW (14215) cam_hal: NO-SOI[0m
+[0;33mW (14255) cam_hal: NO-SOI[0m
+[0;33mW (14295) cam_hal: NO-SOI[0m
+[0;33mW (14335) cam_hal: NO-SOI[0m
+[0;33mW (14375) cam_hal: NO-SOI[0m
+[0;33mW (14415) cam_hal: NO-SOI[0m
+[0;33mW (14455) cam_hal: NO-SOI[0m
+[0;33mW (14495) cam_hal: NO-SOI[0m
+[0;33mW (14535) cam_hal: NO-SOI[0m
+[0;33mW (14575) cam_hal: NO-SOI[0m
+[0;33mW (14615) cam_hal: NO-SOI[0m
+[0;33mW (14655) cam_hal: NO-SOI[0m
+[0;33mW (14695) cam_hal: NO-SOI[0m
+[0;33mW (14735) cam_hal: NO-SOI[0m
+[0;33mW (14775) cam_hal: NO-SOI[0m
+[0;33mW (14815) cam_hal: NO-SOI[0m
+[0;33mW (14855) cam_hal: NO-SOI[0m
+[0;33mW (14895) cam_hal: NO-SOI[0m
+[0;33mW (14935) cam_hal: NO-SOI[0m
+[0;33mW (14975) cam_hal: NO-SOI[0m
+[0;33mW (15015) cam_hal: NO-SOI[0m
+[0;33mW (15055) cam_hal: NO-SOI[0m
+[0;33mW (15095) cam_hal: NO-SOI[0m
+[0;33mW (15135) cam_hal: NO-SOI[0m
+[0;33mW (15175) cam_hal: NO-SOI[0m
+[0;33mW (15215) cam_hal: NO-SOI[0m
+[0;33mW (15255) cam_hal: NO-SOI[0m
+[0;33mW (15295) cam_hal: NO-SOI[0m
+[0;33mW (15335) cam_hal: NO-SOI[0m
+[0;33mW (15375) cam_hal: NO-SOI[0m
+[0;33mW (15415) cam_hal: NO-SOI[0m
+[0;33mW (15455) cam_hal: NO-SOI[0m
+[0;33mW (15495) cam_hal: NO-SOI[0m
+[0;33mW (15535) cam_hal: NO-SOI[0m
+[0;33mW (15575) cam_hal: NO-SOI[0m
+[0;33mW (15615) cam_hal: NO-SOI[0m
+[0;33mW (15655) cam_hal: NO-SOI[0m
+[0;33mW (15695) cam_hal: NO-SOI[0m
+[0;33mW (15735) cam_hal: NO-SOI[0m
+[0;33mW (15775) cam_hal: NO-SOI[0m
+[0;33mW (15815) cam_hal: NO-SOI[0m
+[0;33mW (15855) cam_hal: NO-SOI[0m
+[0;33mW (15895) cam_hal: NO-SOI[0m
+[0;33mW (15935) cam_hal: NO-SOI[0m
+[0;33mW (15975) cam_hal: NO-SOI[0m
+[0;33mW (16015) cam_hal: NO-SOI[0m
+[0;33mW (16055) cam_hal: NO-SOI[0m
+[0;33mW (16095) cam_hal: NO-SOI[0m
+[0;33mW (16135) cam_hal: NO-SOI[0m
+[0;33mW (16175) cam_hal: NO-SOI[0m
+[0;33mW (16215) cam_hal: NO-SOI[0m
+[0;33mW (16255) cam_hal: NO-SOI[0m
+[0;33mW (16295) cam_hal: NO-SOI[0m
+[0;33mW (16335) cam_hal: NO-SOI[0m
+[0;33mW (16375) cam_hal: NO-SOI[0m
+[0;33mW (16415) cam_hal: NO-SOI[0m
+[0;33mW (16455) cam_hal: NO-SOI[0m
+[0;33mW (16495) cam_hal: NO-SOI[0m
+[0;33mW (16535) cam_hal: NO-SOI[0m
+[0;33mW (16575) cam_hal: NO-SOI[0m
+[0;33mW (16615) cam_hal: NO-SOI[0m
+[0;33mW (16655) cam_hal: NO-SOI[0m
+[0;33mW (16695) cam_hal: NO-SOI[0m
+[0;33mW (16735) cam_hal: NO-SOI[0m
+[0;33mW (16775) cam_hal: NO-SOI[0m
+[0;33mW (16815) cam_hal: NO-SOI[0m
+[0;33mW (16855) cam_hal: NO-SOI[0m
+[0;33mW (16895) cam_hal: NO-SOI[0m
+[0;33mW (16935) cam_hal: NO-SOI[0m
+[0;33mW (16975) cam_hal: NO-SOI[0m
+[0;33mW (17015) cam_hal: NO-SOI[0m
+[0;33mW (17055) cam_hal: NO-SOI[0m
+[0;33mW (17095) cam_hal: NO-SOI[0m
+[0;33mW (17125) cam_hal: NO-SOI[0m
+[0;33mW (17165) cam_hal: NO-SOI[0m
+[0;33mW (17205) cam_hal: NO-SOI[0m
+[0;33mW (17245) cam_hal: NO-SOI[0m
+[0;33mW (17285) cam_hal: NO-SOI[0m
+[0;33mW (17325) cam_hal: NO-SOI[0m
+[0;33mW (17365) cam_hal: NO-SOI[0m
+[0;33mW (17405) cam_hal: NO-SOI[0m
+[0;33mW (17445) cam_hal: NO-SOI[0m
+[0;33mW (17485) cam_hal: NO-SOI[0m
+[0;33mW (17525) cam_hal: NO-SOI[0m
+[0;33mW (17565) cam_hal: NO-SOI[0m
+[0;33mW (17605) cam_hal: NO-SOI[0m
+[0;33mW (17645) cam_hal: NO-SOI[0m
+[0;33mW (17685) cam_hal: NO-SOI[0m
+[0;33mW (17725) cam_hal: NO-SOI[0m
+[0;33mW (17765) cam_hal: NO-SOI[0m
+[0;33mW (17805) cam_hal: NO-SOI[0m
+[0;33mW (17845) cam_hal: NO-SOI[0m
+[0;33mW (17885) cam_hal: NO-SOI[0m
+[0;33mW (17925) cam_hal: NO-SOI[0m
+[0;33mW (17965) cam_hal: NO-SOI[0m
+[0;33mW (18005) cam_hal: NO-SOI[0m
+[0;33mW (18045) cam_hal: NO-SOI[0m
+[0;33mW (18085) cam_hal: NO-SOI[0m
+[0;33mW (18125) cam_hal: NO-SOI[0m
+[0;33mW (18165) cam_hal: NO-SOI[0m
+[0;33mW (18205) cam_hal: NO-SOI[0m
+[0;33mW (18245) cam_hal: NO-SOI[0m
+[0;33mW (18285) cam_hal: NO-SOI[0m
+[0;33mW (18325) cam_hal: NO-SOI[0m
+[0;33mW (18365) cam_hal: NO-SOI[0m
+[0;33mW (18405) cam_hal: NO-SOI[0m
+[0;33mW (18445) cam_hal: NO-SOI[0m
+[0;33mW (18485) cam_hal: NO-SOI[0m
+[0;33mW (18525) cam_hal: NO-SOI[0m
+[0;33mW (18565) cam_hal: NO-SOI[0m
+[0;33mW (18605) cam_hal: NO-SOI[0m
+[0;33mW (18645) cam_hal: NO-SOI[0m
+[0;33mW (18685) cam_hal: NO-SOI[0m
+[0;33mW (18725) cam_hal: NO-SOI[0m
+[0;33mW (18765) cam_hal: NO-SOI[0m
+[0;33mW (18805) cam_hal: NO-SOI[0m
+[0;33mW (18845) cam_hal: NO-SOI[0m
+[0;33mW (18885) cam_hal: NO-SOI[0m
+[0;33mW (18925) cam_hal: NO-SOI[0m
+[0;33mW (18965) cam_hal: NO-SOI[0m
+[0;33mW (19005) cam_hal: NO-SOI[0m
+[0;33mW (19045) cam_hal: NO-SOI[0m
+[0;33mW (19085) cam_hal: NO-SOI[0m
+[0;33mW (19125) cam_hal: NO-SOI[0m
+[0;33mW (19165) cam_hal: NO-SOI[0m
+[0;33mW (19205) cam_hal: NO-SOI[0m
+[0;33mW (19245) cam_hal: NO-SOI[0m
+[0;33mW (19285) cam_hal: NO-SOI[0m
+[0;33mW (19325) cam_hal: NO-SOI[0m
+[0;33mW (19365) cam_hal: NO-SOI[0m
+[0;33mW (19405) cam_hal: NO-SOI[0m
+[0;33mW (19445) cam_hal: NO-SOI[0m
+[0;33mW (19485) cam_hal: NO-SOI[0m
+[0;33mW (19525) cam_hal: NO-SOI[0m
+[0;33mW (19565) cam_hal: NO-SOI[0m
+[0;33mW (19605) cam_hal: NO-SOI[0m
+[0;33mW (19645) cam_hal: NO-SOI[0m
+[0;33mW (19685) cam_hal: NO-SOI[0m
+[0;33mW (19725) cam_hal: NO-SOI[0m
+[0;33mW (19765) cam_hal: NO-SOI[0m
+[0;33mW (19805) cam_hal: NO-SOI[0m
+[0;33mW (19845) cam_hal: NO-SOI[0m
+[0;33mW (19885) cam_hal: NO-SOI[0m
+[0;33mW (19925) cam_hal: NO-SOI[0m
+[0;33mW (19965) cam_hal: NO-SOI[0m
+[0;33mW (20005) cam_hal: NO-SOI[0m
+[0;33mW (20045) cam_hal: NO-SOI[0m
+[0;33mW (20085) cam_hal: NO-SOI[0m
+[0;33mW (20125) cam_hal: NO-SOI[0m
+[0;33mW (20165) cam_hal: NO-SOI[0m
+[0;33mW (20205) cam_hal: NO-SOI[0m
+[0;33mW (20245) cam_hal: NO-SOI[0m
+[0;33mW (20285) cam_hal: NO-SOI[0m
+[0;33mW (20325) cam_hal: NO-SOI[0m
+[0;33mW (20365) cam_hal: NO-SOI[0m
+[0;33mW (20405) cam_hal: NO-SOI[0m
+[0;33mW (20445) cam_hal: NO-SOI[0m
+[0;33mW (20485) cam_hal: NO-SOI[0m
+[0;33mW (20525) cam_hal: NO-SOI[0m
+[0;33mW (20565) cam_hal: NO-SOI[0m
+[0;33mW (20605) cam_hal: NO-SOI[0m
+[0;33mW (20645) cam_hal: NO-SOI[0m
+[0;33mW (20685) cam_hal: NO-SOI[0m
+[0;33mW (20725) cam_hal: NO-SOI[0m
+[0;33mW (20765) cam_hal: NO-SOI[0m
+[0;33mW (20805) cam_hal: NO-SOI[0m
+[0;33mW (20845) cam_hal: NO-SOI[0m
+[0;33mW (20885) cam_hal: NO-SOI[0m
+[0;33mW (20925) cam_hal: NO-SOI[0m
+[0;33mW (20965) cam_hal: NO-SOI[0m
+[0;33mW (21005) cam_hal: NO-SOI[0m
+[0;33mW (21045) cam_hal: NO-SOI[0m
+[0;33mW (21085) cam_hal: NO-SOI[0m
+[0;33mW (21125) cam_hal: NO-SOI[0m
+[0;33mW (21165) cam_hal: NO-SOI[0m
+[0;33mW (21205) cam_hal: NO-SOI[0m
+[0;33mW (21245) cam_hal: NO-SOI[0m
+[0;33mW (21285) cam_hal: NO-SOI[0m
+[0;33mW (21325) cam_hal: NO-SOI[0m
+[0;33mW (21365) cam_hal: NO-SOI[0m
+[0;33mW (21405) cam_hal: NO-SOI[0m
+[0;33mW (21445) cam_hal: NO-SOI[0m
+[0;33mW (21485) cam_hal: NO-SOI[0m
+[0;33mW (21525) cam_hal: NO-SOI[0m
+[0;33mW (21565) cam_hal: NO-SOI[0m
+[0;33mW (21605) cam_hal: NO-SOI[0m
+[0;33mW (21645) cam_hal: NO-SOI[0m
+[0;33mW (21685) cam_hal: NO-SOI[0m
+[0;33mW (21725) cam_hal: NO-SOI[0m
+[0;33mW (21765) cam_hal: NO-SOI[0m
+[0;33mW (21805) cam_hal: NO-SOI[0m
+[0;33mW (21845) cam_hal: NO-SOI[0m
+[0;33mW (21885) cam_hal: NO-SOI[0m
+[0;33mW (21925) cam_hal: NO-SOI[0m
+[0;33mW (21965) cam_hal: NO-SOI[0m
+[0;33mW (22005) cam_hal: NO-SOI[0m
+[0;33mW (22045) cam_hal: NO-SOI[0m
+[0;33mW (22085) cam_hal: NO-SOI[0m
+[0;33mW (22125) cam_hal: NO-SOI[0m
+[0;33mW (22165) cam_hal: NO-SOI[0m
+[0;33mW (22205) cam_hal: NO-SOI[0m
+[0;33mW (22245) cam_hal: NO-SOI[0m
+[0;33mW (22285) cam_hal: NO-SOI[0m
+[0;33mW (22325) cam_hal: NO-SOI[0m
+[0;33mW (22365) cam_hal: NO-SOI[0m
+[0;33mW (22405) cam_hal: NO-SOI[0m
+[0;33mW (22445) cam_hal: NO-SOI[0m
+[0;33mW (22485) cam_hal: NO-SOI[0m
+[0;33mW (22525) cam_hal: NO-SOI[0m
+[0;33mW (22565) cam_hal: NO-SOI[0m
+[0;33mW (22605) cam_hal: NO-SOI[0m
+[0;33mW (22645) cam_hal: NO-SOI[0m
+[0;33mW (22685) cam_hal: NO-SOI[0m
+[0;33mW (22725) cam_hal: NO-SOI[0m
+[0;33mW (22765) cam_hal: NO-SOI[0m
+[0;33mW (22805) cam_hal: NO-SOI[0m
+[0;33mW (22845) cam_hal: NO-SOI[0m
+[0;33mW (22885) cam_hal: NO-SOI[0m
+[0;33mW (22925) cam_hal: NO-SOI[0m
+[0;33mW (22965) cam_hal: NO-SOI[0m
+[0;33mW (23005) cam_hal: NO-SOI[0m
+[0;33mW (23045) cam_hal: NO-SOI[0m
+[0;33mW (23085) cam_hal: NO-SOI[0m
+[0;33mW (23125) cam_hal: NO-SOI[0m
+[0;33mW (23165) cam_hal: NO-SOI[0m
+[0;33mW (23205) cam_hal: NO-SOI[0m
+[0;33mW (23245) cam_hal: NO-SOI[0m
+[0;33mW (23285) cam_hal: NO-SOI[0m
+[0;33mW (23325) cam_hal: NO-SOI[0m
+[0;33mW (23365) cam_hal: NO-SOI[0m
+[0;33mW (23405) cam_hal: NO-SOI[0m
+[0;33mW (23445) cam_hal: NO-SOI[0m
+[0;33mW (23485) cam_hal: NO-SOI[0m
+[0;33mW (23525) cam_hal: NO-SOI[0m
+[0;33mW (23565) cam_hal: NO-SOI[0m
+[0;33mW (23605) cam_hal: NO-SOI[0m
+[0;33mW (23645) cam_hal: NO-SOI[0m
+[0;33mW (23685) cam_hal: NO-SOI[0m
+[0;33mW (23725) cam_hal: NO-SOI[0m
+[0;33mW (23765) cam_hal: NO-SOI[0m
+[0;33mW (23805) cam_hal: NO-SOI[0m
+[0;33mW (23845) cam_hal: NO-SOI[0m
+[0;33mW (23885) cam_hal: NO-SOI[0m
+[0;33mW (23925) cam_hal: NO-SOI[0m
+[0;33mW (23965) cam_hal: NO-SOI[0m
+[0;33mW (24005) cam_hal: NO-SOI[0m
+[0;33mW (24045) cam_hal: NO-SOI[0m
+[0;33mW (24085) cam_hal: NO-SOI[0m
+[0;33mW (24125) cam_hal: NO-SOI[0m
+[0;33mW (24165) cam_hal: NO-SOI[0m
+[0;33mW (24205) cam_hal: NO-SOI[0m
+[0;33mW (24245) cam_hal: NO-SOI[0m
+[0;33mW (24285) cam_hal: NO-SOI[0m
+[0;33mW (24325) cam_hal: NO-SOI[0m
+[0;33mW (24365) cam_hal: NO-SOI[0m
+[0;33mW (24405) cam_hal: NO-SOI[0m
+[0;33mW (24445) cam_hal: NO-SOI[0m
+[0;33mW (24485) cam_hal: NO-SOI[0m
+[0;33mW (24525) cam_hal: NO-SOI[0m
+[0;33mW (24565) cam_hal: NO-SOI[0m
+[0;33mW (24605) cam_hal: NO-SOI[0m
+[0;33mW (24645) cam_hal: NO-SOI[0m
+[0;33mW (24685) cam_hal: NO-SOI[0m
+[0;33mW (24725) cam_hal: NO-SOI[0m
+[0;33mW (24765) cam_hal: NO-SOI[0m
+[0;33mW (24805) cam_hal: NO-SOI[0m
+[0;33mW (24845) cam_hal: NO-SOI[0m
+[0;33mW (24885) cam_hal: NO-SOI[0m
+[0;33mW (24925) cam_hal: NO-SOI[0m
+[0;33mW (24965) cam_hal: NO-SOI[0m
+[0;33mW (25005) cam_hal: NO-SOI[0m
+[0;33mW (25045) cam_hal: NO-SOI[0m
+[0;33mW (25085) cam_hal: NO-SOI[0m
+[0;33mW (25125) cam_hal: NO-SOI[0m
+[0;33mW (25165) cam_hal: NO-SOI[0m
+[0;33mW (25205) cam_hal: NO-SOI[0m
+[0;33mW (25245) cam_hal: NO-SOI[0m
+[0;33mW (25285) cam_hal: NO-SOI[0m
+[0;33mW (25325) cam_hal: NO-SOI[0m
+[0;33mW (25365) cam_hal: NO-SOI[0m
+[0;33mW (25405) cam_hal: NO-SOI[0m
+[0;33mW (25445) cam_hal: NO-SOI[0m
+[0;33mW (25485) cam_hal: NO-SOI[0m
+[0;33mW (25525) cam_hal: NO-SOI[0m
+[0;33mW (25565) cam_hal: NO-SOI[0m
+[0;33mW (25605) cam_hal: NO-SOI[0m
+[0;33mW (25645) cam_hal: NO-SOI[0m
+[0;33mW (25685) cam_hal: NO-SOI[0m

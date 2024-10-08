@@ -1,0 +1,770 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM20 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM20 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x42009f41: s_test_psram at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_psram/esp_psram.c:405
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019f24: wifi_default_action_sta_connected at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:85
+[0m
+[0;33m0x42017ee0: esp_netif_up_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x42017d9c: esp_netif_dhcpc_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42097aea: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:941
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x4005703f: memmove in ROM
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x420aa5c4: get_cached_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/log.c:234
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x4037efef: xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:486
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42099c8d: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1678
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42099d19: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1682
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42097b20: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:945
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42099c78: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1677
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x4037b3ba: esp_cpu_wait_for_intr at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x4037eed7: spinlock_acquire at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/include/spinlock.h:84
+ (inlined by) xPortEnterCriticalTimeout at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:473
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42099c3b: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1648
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x420981a5: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1185 (discriminator 40)
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40377138: __retarget_lock_acquire_recursive at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/locks.c:311
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42041a00: cnx_start_handoff_cb at ??:?
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375d5e: panic_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/panic.c:466
+0x4037e19d: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/esp_system_chip.c:93
+0x40386551: abort at C:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/abort.c:38
+0x4037ed0b: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x42099baa: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1620 (discriminator 1)
+[0m
+[0;33m0x4037556c: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/cpu_start.c:183
+[0m
+[0;33m0x40374000: _WindowOverflow4 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m0x4208b890: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4208adac: esp_ds_conn_lock at C:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c:51
+[0m
+[0;33m0x42019c7c: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_init.c:85
+[0m
+[0;33m0x42011e04: esp_ipc_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m0x42010f94: check_i2c_driver_conflict at C:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/i2c.c:1654
+[0m
+[0;33m0x4037c71c: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/port/esp32s3/rtc_time.c:199
+[0m
+[0;33m0x4200213c: esp_app_format_init_elf_sha256 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/esp_app_desc.c:68
+[0m
+[0;33m0x4200792c: __esp_system_init_fn_esp_timer_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/src/esp_timer.c:578
+[0m
+[0;33m0x42005174: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/sleep_gpio.c:189
+[0m
+[0;33m0x420032d0: __esp_system_init_fn_init_components0 at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/startup.c:493
+[0m
+[0;33m0x42017864: esp_netif_new_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0;33m0x42019ef4: wifi_default_action_sta_start at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/src/wifi_default.c:71
+[0m
+[0;33m0x42017258: esp_netif_set_mac_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m0x42017b1c: esp_netif_start_api at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m0x420182bc: esp_netif_update_default_netif_lwip at C:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/lwip/esp_netif_lwip.c:316
+[0m
+[0;33m0x4200a3f0: wifi_event_handler at C:/Users/manish.tomar/workspace/netstick-test/main/main.c:72
+[0m
+[0m

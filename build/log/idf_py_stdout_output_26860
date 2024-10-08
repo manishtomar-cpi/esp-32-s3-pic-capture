@@ -1,0 +1,77 @@
+[1/5] cmd.exe /C "cd /D C:\Users\manish.tomar\workspace\netstick-test\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/manish.tomar/workspace/netstick-test/build/partition_table/partition-table.bin C:/Users/manish.tomar/workspace/netstick-test/build/netstick-test.bin"
+netstick-test.bin binary size 0xfd0a0 bytes. Smallest app partition is 0x100000 bytes. 0x2f60 bytes (1%) free.
+Warning: The smallest app partition is nearly full (1% free space left)!
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\manish.tomar\workspace\netstick-test\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/manish.tomar/workspace/netstick-test/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2.2\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args esptool.py --chip esp32s3 -p COM20 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 netstick-test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM20
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f0:9e:9e:03:0f:e4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x0010dfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13060...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13060 compressed) at 0x00000000 in 0.4 seconds (effective 454.6 kbit/s)...
+Hash of data verified.
+Compressed 1036448 bytes to 626852...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d90d... (5 %)
+Writing at 0x0002b544... (7 %)
+Writing at 0x00033374... (10 %)
+Writing at 0x0003836d... (12 %)
+Writing at 0x00042cc1... (15 %)
+Writing at 0x0004c495... (17 %)
+Writing at 0x000524eb... (20 %)
+Writing at 0x000588cf... (23 %)
+Writing at 0x0005e9c3... (25 %)
+Writing at 0x0006557f... (28 %)
+Writing at 0x0006b50b... (30 %)
+Writing at 0x000713bd... (33 %)
+Writing at 0x0007709e... (35 %)
+Writing at 0x0007d878... (38 %)
+Writing at 0x00082750... (41 %)
+Writing at 0x000878da... (43 %)
+Writing at 0x0008c7b8... (46 %)
+Writing at 0x00091b40... (48 %)
+Writing at 0x00096e88... (51 %)
+Writing at 0x0009c4cc... (53 %)
+Writing at 0x000a2a84... (56 %)
+Writing at 0x000a8555... (58 %)
+Writing at 0x000ae254... (61 %)
+Writing at 0x000b3dc9... (64 %)
+Writing at 0x000b97ee... (66 %)
+Writing at 0x000bf1be... (69 %)
+Writing at 0x000c4f22... (71 %)
+Writing at 0x000cb4a5... (74 %)
+Writing at 0x000d0ec3... (76 %)
+Writing at 0x000d6961... (79 %)
+Writing at 0x000dcadf... (82 %)
+Writing at 0x000e1fcb... (84 %)
+Writing at 0x000e75bb... (87 %)
+Writing at 0x000f30d2... (89 %)
+Writing at 0x000f94bd... (92 %)
+Writing at 0x000ff968... (94 %)
+Writing at 0x001061c4... (97 %)
+Writing at 0x0010b281... (100 %)
+Wrote 1036448 bytes (626852 compressed) at 0x00010000 in 7.0 seconds (effective 1189.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 457.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+-D WORKING_DIRECTORY=C:/Users/manish.tomar/workspace/netstick-test/build -P C:/Espressif/frameworks/esp-idf-v5.2.2/components/esptool_py/run_serial_tool.cmake"
