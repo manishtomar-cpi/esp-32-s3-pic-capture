@@ -1,3 +1,4 @@
+
 #include <esp_log.h>
 #include <esp_system.h>
 #include <nvs_flash.h>
@@ -141,7 +142,6 @@ void print_network_info(void)
     }
 }
 
-// Function to upload the captured image to Cloudinary
 esp_err_t upload_image_to_cloudinary(uint8_t *image_data, size_t image_len)
 {
     ESP_LOGI(TAG, "Uploading image to Cloudinary...");
@@ -183,6 +183,16 @@ esp_err_t upload_image_to_cloudinary(uint8_t *image_data, size_t image_len)
     if (err == ESP_OK)
     {
         ESP_LOGI(TAG, "Image uploaded successfully to Cloudinary");
+
+        // Read and log the response from Cloudinary
+        char buffer[512];  // Buffer to hold the response from Cloudinary
+        int data_read = esp_http_client_read(client, buffer, sizeof(buffer) - 1);
+        if (data_read >= 0) {
+            buffer[data_read] = 0;  // Null-terminate the response string
+            ESP_LOGI(TAG, "Cloudinary Response: %s", buffer);
+        } else {
+            ESP_LOGE(TAG, "Failed to read response from Cloudinary");
+        }
     }
     else
     {
@@ -195,6 +205,7 @@ esp_err_t upload_image_to_cloudinary(uint8_t *image_data, size_t image_len)
 
     return err;
 }
+
 
 
 // Main task to take pictures and upload them

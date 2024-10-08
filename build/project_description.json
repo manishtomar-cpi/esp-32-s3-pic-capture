@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "netstick-test",
-    "project_version":    "02fd1a5-dirty",
+    "project_version":    "d37f2db-dirty",
     "project_path":       "C:/Users/manish.tomar/workspace/netstick-test",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.2.2",
     "build_dir":          "C:/Users/manish.tomar/workspace/netstick-test/build",
@@ -820,7 +820,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/manish.tomar/workspace/netstick-test/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/manish.tomar/workspace/netstick-test/main/main.c" ],
+            "sources": [ "C:/Users/manish.tomar/workspace/netstick-test/main/main.c", "C:/Users/manish.tomar/workspace/netstick-test/build/ca_cert.pem.S" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
